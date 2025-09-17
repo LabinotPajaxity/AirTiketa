@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Privacy Policy-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyPolicy" id="Y6W-OH-hqX" customClass="PrivacyPolicy" customModule="PrishtinaJet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6R-YZ-xo0">
+                                <rect key="frame" x="20" y="64" width="324" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="q62-0B-RH2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rne-1h-MCd">
+                                <rect key="frame" x="20" y="114" width="374" height="728"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7p-cg-2oC">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2Lz-wu-neK"/>
+                                    <constraint firstAttribute="height" constant="40" id="K4O-fE-hZv"/>
+                                </constraints>
+                                <color key="tintColor" red="0.02352941222" green="0.62745100259999997" blue="0.72156864399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="ExitAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LRE-Le-0Jd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rne-1h-MCd" firstAttribute="top" secondItem="L6R-YZ-xo0" secondAttribute="bottom" constant="10" id="0EI-MF-CSC"/>
+                            <constraint firstItem="L6R-YZ-xo0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="HC7-WZ-1hH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rne-1h-MCd" secondAttribute="bottom" constant="20" id="Ns3-Km-j5B"/>
+                            <constraint firstItem="rne-1h-MCd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="OyI-eO-MdD"/>
+                            <constraint firstItem="L6R-YZ-xo0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="dFv-kJ-2s7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rne-1h-MCd" secondAttribute="trailing" constant="20" id="e3u-sh-g95"/>
+                            <constraint firstItem="c7p-cg-2oC" firstAttribute="leading" secondItem="L6R-YZ-xo0" secondAttribute="trailing" constant="10" id="exY-lY-Pty"/>
+                            <constraint firstItem="c7p-cg-2oC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="j2G-B5-vbK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="c7p-cg-2oC" secondAttribute="trailing" constant="20" id="xFU-mM-WjC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="privacyPolicyText" destination="rne-1h-MCd" id="cCG-6Y-PR8"/>
+                        <outlet property="titleLabel" destination="L6R-YZ-xo0" id="JfZ-Uc-kMk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Succes Payment View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SuccesPaymentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SuccesPaymentViewController" customModule="PrishtinaJet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Jm-5K-MXm">
+                                <rect key="frame" x="56" y="132" width="302" height="297"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="y9D-ty-aKK">
+                                        <rect key="frame" x="20" y="53" width="262" height="142.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6jW-8V-1cs">
+                                                <rect key="frame" x="0.0" y="0.5" width="262" height="59"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="6HQ-3s-Y0h"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rg-As-c9G">
+                                                <rect key="frame" x="0.0" y="80" width="262" height="22"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your flight has been booked." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxE-Ch-ypv">
+                                                <rect key="frame" x="0.0" y="122" width="262" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="y9D-ty-aKK" firstAttribute="centerX" secondItem="4Jm-5K-MXm" secondAttribute="centerX" id="0kD-qn-HUN"/>
+                                    <constraint firstAttribute="trailing" secondItem="y9D-ty-aKK" secondAttribute="trailing" constant="20" id="B1U-us-njN"/>
+                                    <constraint firstItem="y9D-ty-aKK" firstAttribute="top" secondItem="4Jm-5K-MXm" secondAttribute="top" constant="53" id="I87-o6-y8d"/>
+                                    <constraint firstItem="y9D-ty-aKK" firstAttribute="leading" secondItem="4Jm-5K-MXm" secondAttribute="leading" constant="20" id="LzP-ml-mW5"/>
+                                    <constraint firstAttribute="height" constant="297" id="uX8-SF-UOk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bp5-EH-RnA">
+                                <rect key="frame" x="0.0" y="756" width="414" height="140"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3YB-qI-CbE">
+                                        <rect key="frame" x="20" y="20" width="374" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ0-fX-cA2">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="lJl-9o-5IG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                <state key="normal" title="Home"/>
+                                                <connections>
+                                                    <action selector="homeDirection:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iiD-si-TPq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Oy-RW-Bjk">
+                                                <rect key="frame" x="0.0" y="55" width="374" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="MbO-4j-Omx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                <state key="normal" title="View Booking Details">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="detailDirection:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="68P-P8-bCw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3YB-qI-CbE" secondAttribute="trailing" constant="20" id="3FQ-C4-Ikc"/>
+                                    <constraint firstItem="3YB-qI-CbE" firstAttribute="centerX" secondItem="Bp5-EH-RnA" secondAttribute="centerX" id="7mM-zC-6zt"/>
+                                    <constraint firstAttribute="height" constant="140" id="JAu-gW-cb5"/>
+                                    <constraint firstItem="3YB-qI-CbE" firstAttribute="leading" secondItem="Bp5-EH-RnA" secondAttribute="leading" constant="20" id="TFY-nM-Ob2"/>
+                                    <constraint firstItem="3YB-qI-CbE" firstAttribute="centerY" secondItem="Bp5-EH-RnA" secondAttribute="centerY" id="i9Y-dx-MAv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.96862745289999996" green="0.96862745289999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="4Jm-5K-MXm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="56" id="1Pg-xk-Tsz"/>
+                            <constraint firstItem="4Jm-5K-MXm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="Gb7-9S-ZoG"/>
+                            <constraint firstItem="Bp5-EH-RnA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Wqi-NB-Ohn"/>
+                            <constraint firstAttribute="bottom" secondItem="Bp5-EH-RnA" secondAttribute="bottom" id="c5X-BJ-Y2K"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4Jm-5K-MXm" secondAttribute="trailing" constant="56" id="qel-mA-Oix"/>
+                            <constraint firstItem="Bp5-EH-RnA" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="uoS-9g-85C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c3G-z8-nAz"/>
+                    <connections>
+                        <outlet property="ShadowView" destination="4Jm-5K-MXm" id="Fn3-Eh-TFX"/>
+                        <outlet property="detailBookingOutlet" destination="2Oy-RW-Bjk" id="Hzf-QW-cW1"/>
+                        <outlet property="homeDirectionOutlet" destination="hZ0-fX-cA2" id="Ekf-xH-6Wm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="105.80357142857143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RNx-qB-OUB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aDp-04-k6g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Uc-9k-64y">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="r8w-uV-kyd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWn-Vc-TJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

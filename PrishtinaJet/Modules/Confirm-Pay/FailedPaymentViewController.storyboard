@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Failed Payment View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FailedPaymentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FailedPaymentViewController" customModule="PrishtinaJet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNC-AS-zgO">
+                                <rect key="frame" x="50" y="98" width="314" height="305"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Pp2-He-jJK">
+                                        <rect key="frame" x="8" y="10" width="298" height="156"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2ee-JB-iC4">
+                                                <rect key="frame" x="0.0" y="0.5" width="298" height="59"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="WAf-Hb-Vq9"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error occurred and your flight couldn't be booked." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfC-bt-YsY">
+                                                <rect key="frame" x="0.0" y="75" width="298" height="44"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx1-GV-im7">
+                                                <rect key="frame" x="0.0" y="134" width="298" height="22"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Pp2-He-jJK" firstAttribute="leading" secondItem="DNC-AS-zgO" secondAttribute="leading" constant="8" id="0IE-Bc-w6n"/>
+                                    <constraint firstItem="Pp2-He-jJK" firstAttribute="top" secondItem="DNC-AS-zgO" secondAttribute="top" constant="10" id="LZy-m2-F2F"/>
+                                    <constraint firstAttribute="height" constant="305" id="Y8O-Ed-H1C"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pp2-He-jJK" secondAttribute="trailing" constant="8" id="oj0-CF-hbz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1A-b1-ekH">
+                                <rect key="frame" x="0.0" y="796" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McH-xC-d5D">
+                                        <rect key="frame" x="20" y="27.5" width="374" height="45"/>
+                                        <color key="backgroundColor" red="0.78823530669999997" green="0.1647058874" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="kUp-Ra-xDA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                        <state key="normal" title="Retry">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="retryButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Gen-7B-swc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="McH-xC-d5D" firstAttribute="centerY" secondItem="q1A-b1-ekH" secondAttribute="centerY" id="7Eb-3R-hX9"/>
+                                    <constraint firstItem="McH-xC-d5D" firstAttribute="centerX" secondItem="q1A-b1-ekH" secondAttribute="centerX" id="9iq-Up-drf"/>
+                                    <constraint firstItem="McH-xC-d5D" firstAttribute="leading" secondItem="q1A-b1-ekH" secondAttribute="leading" constant="20" id="Kh5-rA-NqE"/>
+                                    <constraint firstAttribute="height" constant="100" id="TUl-wi-WV7"/>
+                                    <constraint firstAttribute="trailing" secondItem="McH-xC-d5D" secondAttribute="trailing" constant="20" id="sQB-vh-VEz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.96862745289999996" green="0.96862745289999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DNC-AS-zgO" secondAttribute="trailing" constant="50" id="76M-OU-7Ok"/>
+                            <constraint firstItem="DNC-AS-zgO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="9nJ-Fe-xPD"/>
+                            <constraint firstItem="q1A-b1-ekH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SAF-6f-aip"/>
+                            <constraint firstItem="DNC-AS-zgO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="T43-Bh-NYj"/>
+                            <constraint firstAttribute="bottom" secondItem="q1A-b1-ekH" secondAttribute="bottom" id="VWX-vM-Vjq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="q1A-b1-ekH" secondAttribute="trailing" id="YpL-dt-Wdb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ShadowView" destination="DNC-AS-zgO" id="k5W-P4-ecJ"/>
+                        <outlet property="retryButtonOutlet" destination="McH-xC-d5D" id="KPm-uf-tER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="x.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

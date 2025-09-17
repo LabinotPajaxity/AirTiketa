@@ -1,0 +1,1806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031954D62614736500DD0F1E /* SelectPassengersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031954D52614736500DD0F1E /* SelectPassengersViewController.swift */; };
+		031954DB261473A100DD0F1E /* SelectPassengersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031954DA261473A100DD0F1E /* SelectPassengersViewModel.swift */; };
+		032EB4E325E459DB00C9254F /* DateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EB4E225E459DB00C9254F /* DateSelectionViewController.swift */; };
+		03355B5525D29364005547B1 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03355B5425D29364005547B1 /* NavigationController.swift */; };
+		03355B5A25D299F7005547B1 /* UIViewController+BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03355B5925D299F7005547B1 /* UIViewController+BackgroundImage.swift */; };
+		033A3C9325BEFFCD00269C9F /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033A3C9225BEFFCD00269C9F /* BlueButton.swift */; };
+		033A3C9825BF003000269C9F /* UnderlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033A3C9725BF003000269C9F /* UnderlinedButton.swift */; };
+		033A3CAC25BF0FFA00269C9F /* ItemsView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033A3CAA25BF0FFA00269C9F /* ItemsView+RegisterCell.swift */; };
+		033A3CAD25BF0FFA00269C9F /* Cells+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033A3CAB25BF0FFA00269C9F /* Cells+Identifier.swift */; };
+		033DF749267D32A500EB3AB2 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DF748267D32A500EB3AB2 /* UIViewController+Alerts.swift */; };
+		0342971025D16AF8001504DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342970F25D16AF8001504DD /* HomeViewController.swift */; };
+		0342971B25D17017001504DD /* TabbableViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342971A25D17017001504DD /* TabbableViewContrller.swift */; };
+		03473E1525BC64BD00D819CB /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03473E1425BC64BD00D819CB /* AppColors.swift */; };
+		03473E1D25BC736C00D819CB /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03473E1C25BC736C00D819CB /* InputTextField.swift */; };
+		034B33E125DBFC55002775BE /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B33E025DBFC55002775BE /* TitleHeaderView.swift */; };
+		034DA40625D688C7000254A3 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034DA40525D688C7000254A3 /* SideMenuTableViewCell.swift */; };
+		034DA40E25D68A6E000254A3 /* SideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034DA40D25D68A6E000254A3 /* SideMenuItem.swift */; };
+		0359F01225FBAD07009BB15A /* GetAirports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359F01125FBAD07009BB15A /* GetAirports.swift */; };
+		035BD47C25CBF27500B8A374 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035BD47B25CBF27500B8A374 /* GoogleService-Info.plist */; };
+		0373102825EE9B74006E8D3B /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373102725EE9B74006E8D3B /* Day.swift */; };
+		0373102E25EE9E0B006E8D3B /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373102D25EE9E0B006E8D3B /* MonthMetadata.swift */; };
+		037748EF25C2B76100966B28 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037748EE25C2B76100966B28 /* UIView+Border.swift */; };
+		037748F425C2BCE800966B28 /* UIView+PureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037748F325C2BCE800966B28 /* UIView+PureLayout.swift */; };
+		039BE6D72614B94F00209876 /* PassengerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BE6D62614B94F00209876 /* PassengerSelectionView.swift */; };
+		039BE6DA2614BAD500209876 /* PassengerSelectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BE6D92614BAD500209876 /* PassengerSelectionType.swift */; };
+		039BE6DD2614BD2600209876 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039BE6DC2614BD2600209876 /* Colors.xcassets */; };
+		039BE6F32615C45200209876 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BE6F22615C45200209876 /* Encodable+Dictionary.swift */; };
+		039C4C732629C02300B63C57 /* PassengersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C4C702629C02300B63C57 /* PassengersCell.swift */; };
+		039C4C742629C02300B63C57 /* PassengersViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C4C712629C02300B63C57 /* PassengersViewController+TableView.swift */; };
+		039C4C752629C02300B63C57 /* PassengersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C4C722629C02300B63C57 /* PassengersViewController.swift */; };
+		039C4C852629C99800B63C57 /* NoBookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C4C812629C99800B63C57 /* NoBookingsView.swift */; };
+		039C4CA3262DDCE200B63C57 /* PassengerInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C4C9F262DDCE200B63C57 /* PassengerInformationViewController.swift */; };
+		039C4CA4262DDCE200B63C57 /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C4CA1262DDCE200B63C57 /* DateSelectionView.swift */; };
+		039C4CA5262DDCE200B63C57 /* PassengersInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C4CA2262DDCE200B63C57 /* PassengersInputView.swift */; };
+		039C4CA9262ED88F00B63C57 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C4CA8262ED88F00B63C57 /* DateHelper.swift */; };
+		03A146F925B9DE100031311A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A146F825B9DE100031311A /* LoginViewController.swift */; };
+		03A6A7FD25B73F340042421C /* PureLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 03A6A7FC25B73F340042421C /* PureLayout */; };
+		03A6A80F25B8908E0042421C /* UINavigationController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6A80E25B8908E0042421C /* UINavigationController+StatusBar.swift */; };
+		03BEE70E25C95888003262B8 /* SelectAirportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEE70D25C95888003262B8 /* SelectAirportViewController.swift */; };
+		03BEE71625C9589B003262B8 /* SelectAirportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEE71525C9589B003262B8 /* SelectAirportViewModel.swift */; };
+		03BEE71B25C97B15003262B8 /* AirportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEE71A25C97B15003262B8 /* AirportTableViewCell.swift */; };
+		03BEE72025C97BB1003262B8 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEE71F25C97BB1003262B8 /* Airport.swift */; };
+		03C2C03325F8CBD700295542 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2C03225F8CBD700295542 /* BaseRequest.swift */; };
+		03CFB660261616DC00325A52 /* SearchFlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CFB65F261616DC00325A52 /* SearchFlightModel.swift */; };
+		03CFB66426175AFA00325A52 /* ModalBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CFB66326175AFA00325A52 /* ModalBottomView.swift */; };
+		03D624FB25E50A0600084DC1 /* DateSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D624FA25E50A0600084DC1 /* DateSelectionViewModel.swift */; };
+		03D6250025E50D4B00084DC1 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D624FF25E50D4B00084DC1 /* ModalViewController.swift */; };
+		03D6250825E515D300084DC1 /* DateSelectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6250725E515D300084DC1 /* DateSelectionHeader.swift */; };
+		03DFAE8A2604F22C005DBDA1 /* MonthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFAE892604F22C005DBDA1 /* MonthTableViewCell.swift */; };
+		03E6B0E025C0B8AF0067AB84 /* ListInputButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B0DF25C0B8AF0067AB84 /* ListInputButton.swift */; };
+		03E6B0EB25C1B2E80067AB84 /* InputViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B0EA25C1B2E80067AB84 /* InputViewType.swift */; };
+		03E6B0F725C1C88A0067AB84 /* SearchFlightsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B0F625C1C88A0067AB84 /* SearchFlightsInputView.swift */; };
+		03E6B10625C219E90067AB84 /* HomeFormEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B10525C219E90067AB84 /* HomeFormEntryView.swift */; };
+		03E6B10B25C21B010067AB84 /* ButtonWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B10A25C21B010067AB84 /* ButtonWithIcon.swift */; };
+		03E6B11325C21CF40067AB84 /* SearchFlightsDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B11225C21CF40067AB84 /* SearchFlightsDataEntry.swift */; };
+		03E7FA0325D41FF100E37FAA /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 03E7FA0225D41FF100E37FAA /* SideMenu */; };
+		03F22B8625B18DBE00198734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F22B8525B18DBE00198734 /* AppDelegate.swift */; };
+		03F22B8825B18DBE00198734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F22B8725B18DBE00198734 /* SceneDelegate.swift */; };
+		03F22B8A25B18DBE00198734 /* SearchFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F22B8925B18DBE00198734 /* SearchFlightsViewController.swift */; };
+		03F22B8F25B18DC000198734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F22B8E25B18DC000198734 /* Assets.xcassets */; };
+		03F22B9225B18DC000198734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F22B9025B18DC000198734 /* LaunchScreen.storyboard */; };
+		03F22BBA25B1905A00198734 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03F22BB925B1905A00198734 /* Alamofire */; };
+		03F37FCE25D5306E00C21D8F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F37FCD25D5306E00C21D8F /* SideMenuViewController.swift */; };
+		03F6D56A25E92B3F00250CEC /* MonthCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6D56925E92B3F00250CEC /* MonthCollectionView.swift */; };
+		03F6D56F25E92CE900250CEC /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6D56E25E92CE900250CEC /* Date+Extensions.swift */; };
+		03F6D57425E9377900250CEC /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6D57325E9377900250CEC /* DayCollectionViewCell.swift */; };
+		0B0343DE2E49D5A100BC8C0F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0343DD2E49D5A100BC8C0F /* Lottie */; };
+		0BD34A892E468B930043E6F2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A882E468B930043E6F2 /* FirebaseAnalytics */; };
+		0BD34A8B2E468B930043E6F2 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A8A2E468B930043E6F2 /* FirebaseAnalyticsCore */; };
+		0BD34A8D2E468B930043E6F2 /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A8C2E468B930043E6F2 /* FirebaseAnalyticsIdentitySupport */; };
+		0BD34A8F2E468B930043E6F2 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A8E2E468B930043E6F2 /* FirebaseAppCheck */; };
+		0BD34A912E468B930043E6F2 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A902E468B930043E6F2 /* FirebaseAppDistribution-Beta */; };
+		0BD34A932E468B930043E6F2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A922E468B930043E6F2 /* FirebaseAuth */; };
+		0BD34A952E468B930043E6F2 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A942E468B930043E6F2 /* FirebaseCrashlytics */; };
+		0BD34A972E468B930043E6F2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A962E468B930043E6F2 /* FirebaseDatabase */; };
+		0BD34A992E468B930043E6F2 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A982E468B930043E6F2 /* FirebaseRemoteConfig */; };
+		2D01894F2704601400C1F70D /* TotalPriceWithNumberPassenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01894E2704601400C1F70D /* TotalPriceWithNumberPassenger.swift */; };
+		2D0189512704615F00C1F70D /* TotalPriceWithNumberPassengerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0189502704615F00C1F70D /* TotalPriceWithNumberPassengerModel.swift */; };
+		2D018956270AF44B00C1F70D /* FindMyReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D018955270AF44B00C1F70D /* FindMyReservationModel.swift */; };
+		2D018959270B056000C1F70D /* FinderBookingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D018958270B056000C1F70D /* FinderBookingStoryboard.storyboard */; };
+		2D01895B270B0AD600C1F70D /* FindMyBookingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01895A270B0AD600C1F70D /* FindMyBookingController.swift */; };
+		2D01895D270B0BBE00C1F70D /* FindMyBookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01895C270B0BBE00C1F70D /* FindMyBookingCell.swift */; };
+		2D0189632715841700C1F70D /* FindMyBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0189622715841700C1F70D /* FindMyBooking.swift */; };
+		2D01897A271C9F4600C1F70D /* FindBookingInputs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D018979271C9F4600C1F70D /* FindBookingInputs.storyboard */; };
+		2D01897C271C9F6C00C1F70D /* FindBookingInputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01897B271C9F6C00C1F70D /* FindBookingInputsViewController.swift */; };
+		2D01897F271D641100C1F70D /* BoardingPassScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D01897E271D641100C1F70D /* BoardingPassScreen.storyboard */; };
+		2D018981271D644F00C1F70D /* BoradingPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D018980271D644E00C1F70D /* BoradingPassViewController.swift */; };
+		2D1113682856687600C40684 /* ChoosePaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1113672856687500C40684 /* ChoosePaymentMethod.swift */; };
+		2D111390285750A000C40684 /* UserDefaults-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11138F285750A000C40684 /* UserDefaults-Ext.swift */; };
+		2D26C434285B374C00D16C8C /* TermsAndCondition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D26C433285B374C00D16C8C /* TermsAndCondition.storyboard */; };
+		2D26C436285B387300D16C8C /* TermsAndConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26C435285B387300D16C8C /* TermsAndConditions.swift */; };
+		2D27688726EA8390007DB1DA /* RefreshToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27688626EA8390007DB1DA /* RefreshToken.swift */; };
+		2D27688926EA92C0007DB1DA /* RefreshTokenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27688826EA92C0007DB1DA /* RefreshTokenViewModel.swift */; };
+		2D27688B26EE4B12007DB1DA /* ReservationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27688A26EE4B12007DB1DA /* ReservationDetails.swift */; };
+		2D27688E26EF5444007DB1DA /* NetworkManager copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27688D26EF5444007DB1DA /* NetworkManager copy.swift */; };
+		2D27689126EF7D94007DB1DA /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = 2D27689026EF7D94007DB1DA /* JWTDecode */; };
+		2D27689426F09993007DB1DA /* ConfirmPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27689326F09993007DB1DA /* ConfirmPay.swift */; };
+		2D27689626F0CCAA007DB1DA /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27689526F0CCAA007DB1DA /* PaymentResponse.swift */; };
+		2D27689A26F32AE1007DB1DA /* PaymentInWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27689926F32AE1007DB1DA /* PaymentInWebView.swift */; };
+		2D27689C26F36225007DB1DA /* SuccesPaymentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D27689B26F36225007DB1DA /* SuccesPaymentStoryboard.storyboard */; };
+		2D27689E26F3627D007DB1DA /* SuccesPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27689D26F3627D007DB1DA /* SuccesPaymentViewController.swift */; };
+		2D2768A026F3667D007DB1DA /* FailedPaymentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D27689F26F3667D007DB1DA /* FailedPaymentViewController.storyboard */; };
+		2D2768A226F37C41007DB1DA /* FailedPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2768A126F37C41007DB1DA /* FailedPaymentViewController.swift */; };
+		2D359F802823F1B400B406FF /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D359F7F2823F1B400B406FF /* ChangePassword.swift */; };
+		2D513C9A26FB2CF500547168 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 2D513C9926FB2CF500547168 /* Toast */; };
+		2D5564C5285B578E00965C0D /* PrivacyPolicy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5564C4285B578E00965C0D /* PrivacyPolicy.storyboard */; };
+		2D5564C7285B583700965C0D /* PrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5564C6285B583700965C0D /* PrivacyPolicy.swift */; };
+		2D5568C3290827B70021E9C6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5568C2290827B70021E9C6 /* Validation.swift */; };
+		2D7D2A48291840F4001C0A7D /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D2A47291840F4001C0A7D /* FormValidation.swift */; };
+		2D94B2A128EDA49B00A63356 /* DoneButton-Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D94B2A028EDA49B00A63356 /* DoneButton-Keyboard.swift */; };
+		2D94B2F028F41C7300A63356 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D94B2EF28F41C7300A63356 /* Reachability.swift */; };
+		2D94B30428F4526D00A63356 /* no-internet-connection.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D94B30328F4526D00A63356 /* no-internet-connection.json */; };
+		2D94B30628F4529500A63356 /* NotConnected.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D94B30528F4529500A63356 /* NotConnected.storyboard */; };
+		2D94B30828F452A700A63356 /* NotConnectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D94B30728F452A700A63356 /* NotConnectedVC.swift */; };
+		2D94B31428F5A9C900A63356 /* ReusableCode+objcFunctionTapp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D94B31328F5A9C900A63356 /* ReusableCode+objcFunctionTapp.swift */; };
+		2DC40BBB26C5CCDE00667D45 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BBA26C5CCDE00667D45 /* ProfileViewController.swift */; };
+		2DC40BBF26C66FA600667D45 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BBE26C66FA600667D45 /* RegisterResponse.swift */; };
+		2DC40BC126C695E500667D45 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC40BC026C695E500667D45 /* Profile.storyboard */; };
+		2DC40BC326C6AC5E00667D45 /* EditPorfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC40BC226C6AC5E00667D45 /* EditPorfile.storyboard */; };
+		2DC40BC526C6ACF500667D45 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BC426C6ACF500667D45 /* EditProfileViewController.swift */; };
+		2DC40BCF26C91DF700667D45 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BCE26C91DF700667D45 /* User.swift */; };
+		2DC40BD126C95B8600667D45 /* GetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BD026C95B8600667D45 /* GetUserInfo.swift */; };
+		2DC40BD326CA869500667D45 /* EditUserApiPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BD226CA869500667D45 /* EditUserApiPut.swift */; };
+		2DC40BDB26CBD66100667D45 /* ADJUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BDA26CBD66100667D45 /* ADJUser.swift */; };
+		2DC40BE026CC011B00667D45 /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC40BDF26CC011B00667D45 /* ChangePassword.storyboard */; };
+		2DC40BE226CC02BF00667D45 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BE126CC02BF00667D45 /* ChangePasswordViewController.swift */; };
+		2DC40BED26CD26C200667D45 /* MyBookings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC40BEC26CD26C200667D45 /* MyBookings.storyboard */; };
+		2DC40BF126CD27A700667D45 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BF026CD27A700667D45 /* BookingViewController.swift */; };
+		2DC40BF326CD33DF00667D45 /* BookingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BF226CD33DF00667D45 /* BookingsCell.swift */; };
+		2DC40BF526CD47E400667D45 /* Reservations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BF426CD47E400667D45 /* Reservations.swift */; };
+		2DC40BF726CE4BE000667D45 /* GetMyBookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40BF626CE4BE000667D45 /* GetMyBookings.swift */; };
+		2DC40D0326D0320100667D45 /* BookingsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40D0226D0320100667D45 /* BookingsHeaderCell.swift */; };
+		2DC40D0926D3B91E00667D45 /* DetailsBookings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC40D0826D3B91E00667D45 /* DetailsBookings.storyboard */; };
+		2DC40D0B26D3B94000667D45 /* DetailsBookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40D0A26D3B94000667D45 /* DetailsBookingsViewController.swift */; };
+		2DC40D0D26D3D5DC00667D45 /* DetailsBookingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40D0C26D3D5DC00667D45 /* DetailsBookingsCell.swift */; };
+		2DC40D0F26D3DED300667D45 /* DetailMyBookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC40D0E26D3DED300667D45 /* DetailMyBookings.swift */; };
+		2DF821DD2722DC52009C2932 /* Boarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF821DC2722DC52009C2932 /* Boarding.storyboard */; };
+		2DF821DF2722DC7A009C2932 /* BoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF821DE2722DC7A009C2932 /* BoardingVC.swift */; };
+		2DFF3F5E26C3FB1C003CBB30 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFF3F5D26C3FB1C003CBB30 /* SignUp.storyboard */; };
+		2DFF3F6126C4052C003CBB30 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF3F6026C4052C003CBB30 /* RegisterViewController.swift */; };
+		2DFF3F6726C49D60003CBB30 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2DFF3F6626C49D60003CBB30 /* SwiftyJSON */; };
+		2DFF3F6926C49F77003CBB30 /* URL-Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF3F6826C49F77003CBB30 /* URL-Api.swift */; };
+		2DFF3F6F26C514F1003CBB30 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 2DFF3F6E26C514F1003CBB30 /* ObjectMapper */; };
+		2DFF3F7226C51995003CBB30 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 2DFF3F7126C51995003CBB30 /* KeychainAccess */; };
+		2DFF3F7426C519C5003CBB30 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF3F7326C519C5003CBB30 /* KeychainManager.swift */; };
+		2DFF3F7726C520F6003CBB30 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF3F7626C520F6003CBB30 /* CheckBox.swift */; };
+		60001C9C26554D7200C24DDA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001C9B26554D7200C24DDA /* SignUpViewModel.swift */; };
+		60001CA82657A50E00C24DDA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001CA72657A50E00C24DDA /* LoginViewModel.swift */; };
+		60001CAF265E477700C24DDA /* SelectedFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001CAE265E477700C24DDA /* SelectedFlightsViewController.swift */; };
+		60001CB4265E6C8200C24DDA /* SelectedFlightsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001CB3265E6C8200C24DDA /* SelectedFlightsCell.swift */; };
+		60001CB6265E72F600C24DDA /* FlightInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001CB5265E72F600C24DDA /* FlightInfoView.swift */; };
+		60001CB9265FB11A00C24DDA /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001CB8265FB11A00C24DDA /* CountriesViewController.swift */; };
+		60001CBB265FBF1900C24DDA /* GetCountries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001CBA265FBF1900C24DDA /* GetCountries.swift */; };
+		60001CBD265FC55C00C24DDA /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001CBC265FC55C00C24DDA /* CountriesViewModel.swift */; };
+		60001CBF265FC8E700C24DDA /* CountriesViewController+UISearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001CBE265FC8E700C24DDA /* CountriesViewController+UISearchController.swift */; };
+		60001CC226600C3B00C24DDA /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60001CC126600C3B00C24DDA /* CountriesTableViewCell.swift */; };
+		6029F43B269DE24600FD0253 /* SelectedFlightsViewController+TableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6029F43A269DE24600FD0253 /* SelectedFlightsViewController+TableViewExt.swift */; };
+		604452FA262EFB3E00894463 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604452F9262EFB3E00894463 /* Login.swift */; };
+		6044530F262F0A3200894463 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044530E262F0A3200894463 /* LoginResponse.swift */; };
+		604453142632D2C400894463 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604453132632D2C400894463 /* SignUp.swift */; };
+		605F6CFA266E5023009E68CF /* EmptyReturnFlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605F6CF9266E5023009E68CF /* EmptyReturnFlightCell.swift */; };
+		605F6CFC266F8ED2009E68CF /* SelectedFlightsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605F6CFB266F8ED2009E68CF /* SelectedFlightsModel.swift */; };
+		607B17832685D7750065F674 /* PassengersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607B17822685D7750065F674 /* PassengersViewModel.swift */; };
+		607B178626861ADC0065F674 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 607B178526861ADC0065F674 /* IQKeyboardManagerSwift */; };
+		60AB391726208A1900CA5D56 /* SelectDepartureFlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB391626208A1900CA5D56 /* SelectDepartureFlightViewController.swift */; };
+		60AB391F2620B6B700CA5D56 /* SelectDepartureTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB391E2620B6B700CA5D56 /* SelectDepartureTopView.swift */; };
+		60AB39222620BBE100CA5D56 /* SearchDepartureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB39212620BBE100CA5D56 /* SearchDepartureModel.swift */; };
+		60AB39362624708900CA5D56 /* SelectDepartureDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB39352624708900CA5D56 /* SelectDepartureDateView.swift */; };
+		60AB394326259CA800CA5D56 /* SelectDepartureFlight+TableViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB394226259CA800CA5D56 /* SelectDepartureFlight+TableViewProtocols.swift */; };
+		60AB39482625A04F00CA5D56 /* SearchFlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB39472625A04F00CA5D56 /* SearchFlightCell.swift */; };
+		60AB394C2625D0C700CA5D56 /* SelectDepartureHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB394B2625D0C700CA5D56 /* SelectDepartureHeaderView.swift */; };
+		60AB39502625D64F00CA5D56 /* ContinueButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB394F2625D64F00CA5D56 /* ContinueButtonView.swift */; };
+		60AB39A6262D9D4500CA5D56 /* UIView+ShadowBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB39A5262D9D4500CA5D56 /* UIView+ShadowBorder.swift */; };
+		60CB411F268F15BD00C26A9A /* AvailableFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB411E268F15BD00C26A9A /* AvailableFlights.swift */; };
+		60CB4122268F354B00C26A9A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 60CB4121268F354B00C26A9A /* FSCalendar */; };
+		60D3636A264417F000864F0C /* GetFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D36369264417F000864F0C /* GetFlights.swift */; };
+		60D3636C264440F900864F0C /* SelectDepartureFligtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D3636B264440F900864F0C /* SelectDepartureFligtViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D4EE307291A5D6300152F16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D4EE300291A5D6300152F16 /* FormValidation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D4EE2F0291A5B1000152F16;
+			remoteInfo = FormValidation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031954D52614736500DD0F1E /* SelectPassengersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPassengersViewController.swift; sourceTree = "<group>"; };
+		031954DA261473A100DD0F1E /* SelectPassengersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPassengersViewModel.swift; sourceTree = "<group>"; };
+		032EB4E225E459DB00C9254F /* DateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionViewController.swift; sourceTree = "<group>"; };
+		03355B5425D29364005547B1 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		03355B5925D299F7005547B1 /* UIViewController+BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackgroundImage.swift"; sourceTree = "<group>"; };
+		033A3C9225BEFFCD00269C9F /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		033A3C9725BF003000269C9F /* UnderlinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedButton.swift; sourceTree = "<group>"; };
+		033A3CAA25BF0FFA00269C9F /* ItemsView+RegisterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemsView+RegisterCell.swift"; sourceTree = "<group>"; };
+		033A3CAB25BF0FFA00269C9F /* Cells+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cells+Identifier.swift"; sourceTree = "<group>"; };
+		033DF748267D32A500EB3AB2 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		0342970F25D16AF8001504DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0342971A25D17017001504DD /* TabbableViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbableViewContrller.swift; sourceTree = "<group>"; };
+		03473E1425BC64BD00D819CB /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		03473E1C25BC736C00D819CB /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		034B33E025DBFC55002775BE /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
+		034DA40525D688C7000254A3 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		034DA40D25D68A6E000254A3 /* SideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItem.swift; sourceTree = "<group>"; };
+		0359F01125FBAD07009BB15A /* GetAirports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAirports.swift; sourceTree = "<group>"; };
+		035BD47B25CBF27500B8A374 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0373102725EE9B74006E8D3B /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		0373102D25EE9E0B006E8D3B /* MonthMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
+		037748EE25C2B76100966B28 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		037748F325C2BCE800966B28 /* UIView+PureLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PureLayout.swift"; sourceTree = "<group>"; };
+		039BE6D62614B94F00209876 /* PassengerSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerSelectionView.swift; sourceTree = "<group>"; };
+		039BE6D92614BAD500209876 /* PassengerSelectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerSelectionType.swift; sourceTree = "<group>"; };
+		039BE6DC2614BD2600209876 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		039BE6F22615C45200209876 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		039C4C702629C02300B63C57 /* PassengersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengersCell.swift; sourceTree = "<group>"; };
+		039C4C712629C02300B63C57 /* PassengersViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PassengersViewController+TableView.swift"; sourceTree = "<group>"; };
+		039C4C722629C02300B63C57 /* PassengersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengersViewController.swift; sourceTree = "<group>"; };
+		039C4C812629C99800B63C57 /* NoBookingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoBookingsView.swift; sourceTree = "<group>"; };
+		039C4C9F262DDCE200B63C57 /* PassengerInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengerInformationViewController.swift; sourceTree = "<group>"; };
+		039C4CA1262DDCE200B63C57 /* DateSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
+		039C4CA2262DDCE200B63C57 /* PassengersInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengersInputView.swift; sourceTree = "<group>"; };
+		039C4CA8262ED88F00B63C57 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		03A146F825B9DE100031311A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		03A6A80E25B8908E0042421C /* UINavigationController+StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+StatusBar.swift"; sourceTree = "<group>"; };
+		03BEE70D25C95888003262B8 /* SelectAirportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAirportViewController.swift; sourceTree = "<group>"; };
+		03BEE71525C9589B003262B8 /* SelectAirportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAirportViewModel.swift; sourceTree = "<group>"; };
+		03BEE71A25C97B15003262B8 /* AirportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportTableViewCell.swift; sourceTree = "<group>"; };
+		03BEE71F25C97BB1003262B8 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		03C2C03225F8CBD700295542 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		03CFB65F261616DC00325A52 /* SearchFlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightModel.swift; sourceTree = "<group>"; };
+		03CFB66326175AFA00325A52 /* ModalBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBottomView.swift; sourceTree = "<group>"; };
+		03D624FA25E50A0600084DC1 /* DateSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionViewModel.swift; sourceTree = "<group>"; };
+		03D624FF25E50D4B00084DC1 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		03D6250725E515D300084DC1 /* DateSelectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionHeader.swift; sourceTree = "<group>"; };
+		03DFAE892604F22C005DBDA1 /* MonthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthTableViewCell.swift; sourceTree = "<group>"; };
+		03E6B0DF25C0B8AF0067AB84 /* ListInputButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInputButton.swift; sourceTree = "<group>"; };
+		03E6B0EA25C1B2E80067AB84 /* InputViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewType.swift; sourceTree = "<group>"; };
+		03E6B0F625C1C88A0067AB84 /* SearchFlightsInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsInputView.swift; sourceTree = "<group>"; };
+		03E6B10525C219E90067AB84 /* HomeFormEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFormEntryView.swift; sourceTree = "<group>"; };
+		03E6B10A25C21B010067AB84 /* ButtonWithIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithIcon.swift; sourceTree = "<group>"; };
+		03E6B11225C21CF40067AB84 /* SearchFlightsDataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsDataEntry.swift; sourceTree = "<group>"; };
+		03F22B8225B18DBE00198734 /* AirTiketa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirTiketa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F22B8525B18DBE00198734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03F22B8725B18DBE00198734 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03F22B8925B18DBE00198734 /* SearchFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsViewController.swift; sourceTree = "<group>"; };
+		03F22B8E25B18DC000198734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03F22B9125B18DC000198734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03F22B9325B18DC000198734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F22B9C25B18DC000198734 /* PrishtinaJetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrishtinaJetTests.swift; sourceTree = "<group>"; };
+		03F22B9E25B18DC000198734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F22BA725B18DC000198734 /* PrishtinaJetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrishtinaJetUITests.swift; sourceTree = "<group>"; };
+		03F22BA925B18DC000198734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F37FCD25D5306E00C21D8F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		03F6D56925E92B3F00250CEC /* MonthCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCollectionView.swift; sourceTree = "<group>"; };
+		03F6D56E25E92CE900250CEC /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		03F6D57325E9377900250CEC /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D01894E2704601400C1F70D /* TotalPriceWithNumberPassenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPriceWithNumberPassenger.swift; sourceTree = "<group>"; };
+		2D0189502704615F00C1F70D /* TotalPriceWithNumberPassengerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPriceWithNumberPassengerModel.swift; sourceTree = "<group>"; };
+		2D018955270AF44B00C1F70D /* FindMyReservationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyReservationModel.swift; sourceTree = "<group>"; };
+		2D018958270B056000C1F70D /* FinderBookingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FinderBookingStoryboard.storyboard; sourceTree = "<group>"; };
+		2D01895A270B0AD600C1F70D /* FindMyBookingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyBookingController.swift; sourceTree = "<group>"; };
+		2D01895C270B0BBE00C1F70D /* FindMyBookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyBookingCell.swift; sourceTree = "<group>"; };
+		2D0189622715841700C1F70D /* FindMyBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyBooking.swift; sourceTree = "<group>"; };
+		2D018979271C9F4600C1F70D /* FindBookingInputs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindBookingInputs.storyboard; sourceTree = "<group>"; };
+		2D01897B271C9F6C00C1F70D /* FindBookingInputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBookingInputsViewController.swift; sourceTree = "<group>"; };
+		2D01897E271D641100C1F70D /* BoardingPassScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardingPassScreen.storyboard; sourceTree = "<group>"; };
+		2D018980271D644E00C1F70D /* BoradingPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoradingPassViewController.swift; sourceTree = "<group>"; };
+		2D1113672856687500C40684 /* ChoosePaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePaymentMethod.swift; sourceTree = "<group>"; };
+		2D11138F285750A000C40684 /* UserDefaults-Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults-Ext.swift"; sourceTree = "<group>"; };
+		2D26C433285B374C00D16C8C /* TermsAndCondition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsAndCondition.storyboard; sourceTree = "<group>"; };
+		2D26C435285B387300D16C8C /* TermsAndConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditions.swift; sourceTree = "<group>"; };
+		2D27688626EA8390007DB1DA /* RefreshToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshToken.swift; sourceTree = "<group>"; };
+		2D27688826EA92C0007DB1DA /* RefreshTokenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenViewModel.swift; sourceTree = "<group>"; };
+		2D27688A26EE4B12007DB1DA /* ReservationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetails.swift; sourceTree = "<group>"; };
+		2D27688D26EF5444007DB1DA /* NetworkManager copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManager copy.swift"; sourceTree = "<group>"; };
+		2D27689326F09993007DB1DA /* ConfirmPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPay.swift; sourceTree = "<group>"; };
+		2D27689526F0CCAA007DB1DA /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
+		2D27689926F32AE1007DB1DA /* PaymentInWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInWebView.swift; sourceTree = "<group>"; };
+		2D27689B26F36225007DB1DA /* SuccesPaymentStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuccesPaymentStoryboard.storyboard; sourceTree = "<group>"; };
+		2D27689D26F3627D007DB1DA /* SuccesPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesPaymentViewController.swift; sourceTree = "<group>"; };
+		2D27689F26F3667D007DB1DA /* FailedPaymentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FailedPaymentViewController.storyboard; sourceTree = "<group>"; };
+		2D2768A126F37C41007DB1DA /* FailedPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedPaymentViewController.swift; sourceTree = "<group>"; };
+		2D359F7F2823F1B400B406FF /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		2D4EE2FD291A5C3700152F16 /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FormValidation.swift; path = ../../../PersonalLibrary/FormValidation/FormValidation/FormValidation.swift; sourceTree = "<group>"; };
+		2D4EE300291A5D6300152F16 /* FormValidation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FormValidation.xcodeproj; sourceTree = "<group>"; };
+		2D4EE304291A5D6300152F16 /* FormValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormValidation.h; sourceTree = "<group>"; };
+		2D4EE305291A5D6300152F16 /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		2D5564C4285B578E00965C0D /* PrivacyPolicy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrivacyPolicy.storyboard; sourceTree = "<group>"; };
+		2D5564C6285B583700965C0D /* PrivacyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicy.swift; sourceTree = "<group>"; };
+		2D5568C2290827B70021E9C6 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		2D7D2A47291840F4001C0A7D /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		2D94B2A028EDA49B00A63356 /* DoneButton-Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoneButton-Keyboard.swift"; sourceTree = "<group>"; };
+		2D94B2EF28F41C7300A63356 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		2D94B30328F4526D00A63356 /* no-internet-connection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "no-internet-connection.json"; sourceTree = "<group>"; };
+		2D94B30528F4529500A63356 /* NotConnected.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotConnected.storyboard; sourceTree = "<group>"; };
+		2D94B30728F452A700A63356 /* NotConnectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotConnectedVC.swift; sourceTree = "<group>"; };
+		2D94B31328F5A9C900A63356 /* ReusableCode+objcFunctionTapp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReusableCode+objcFunctionTapp.swift"; sourceTree = "<group>"; };
+		2DC40BBA26C5CCDE00667D45 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2DC40BBE26C66FA600667D45 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		2DC40BC026C695E500667D45 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		2DC40BC226C6AC5E00667D45 /* EditPorfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditPorfile.storyboard; sourceTree = "<group>"; };
+		2DC40BC426C6ACF500667D45 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		2DC40BCE26C91DF700667D45 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2DC40BD026C95B8600667D45 /* GetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInfo.swift; sourceTree = "<group>"; };
+		2DC40BD226CA869500667D45 /* EditUserApiPut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserApiPut.swift; sourceTree = "<group>"; };
+		2DC40BDA26CBD66100667D45 /* ADJUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADJUser.swift; sourceTree = "<group>"; };
+		2DC40BDF26CC011B00667D45 /* ChangePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePassword.storyboard; sourceTree = "<group>"; };
+		2DC40BE126CC02BF00667D45 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		2DC40BEC26CD26C200667D45 /* MyBookings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBookings.storyboard; sourceTree = "<group>"; };
+		2DC40BF026CD27A700667D45 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		2DC40BF226CD33DF00667D45 /* BookingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsCell.swift; sourceTree = "<group>"; };
+		2DC40BF426CD47E400667D45 /* Reservations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservations.swift; sourceTree = "<group>"; };
+		2DC40BF626CE4BE000667D45 /* GetMyBookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMyBookings.swift; sourceTree = "<group>"; };
+		2DC40D0226D0320100667D45 /* BookingsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsHeaderCell.swift; sourceTree = "<group>"; };
+		2DC40D0826D3B91E00667D45 /* DetailsBookings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsBookings.storyboard; sourceTree = "<group>"; };
+		2DC40D0A26D3B94000667D45 /* DetailsBookingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBookingsViewController.swift; sourceTree = "<group>"; };
+		2DC40D0C26D3D5DC00667D45 /* DetailsBookingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBookingsCell.swift; sourceTree = "<group>"; };
+		2DC40D0E26D3DED300667D45 /* DetailMyBookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMyBookings.swift; sourceTree = "<group>"; };
+		2DF821DC2722DC52009C2932 /* Boarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Boarding.storyboard; sourceTree = "<group>"; };
+		2DF821DE2722DC7A009C2932 /* BoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingVC.swift; sourceTree = "<group>"; };
+		2DFF3F5D26C3FB1C003CBB30 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		2DFF3F6026C4052C003CBB30 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2DFF3F6826C49F77003CBB30 /* URL-Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL-Api.swift"; sourceTree = "<group>"; };
+		2DFF3F7326C519C5003CBB30 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		2DFF3F7626C520F6003CBB30 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		60001C9B26554D7200C24DDA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		60001CA72657A50E00C24DDA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		60001CAE265E477700C24DDA /* SelectedFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFlightsViewController.swift; sourceTree = "<group>"; };
+		60001CB3265E6C8200C24DDA /* SelectedFlightsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFlightsCell.swift; sourceTree = "<group>"; };
+		60001CB5265E72F600C24DDA /* FlightInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoView.swift; sourceTree = "<group>"; };
+		60001CB8265FB11A00C24DDA /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		60001CBA265FBF1900C24DDA /* GetCountries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountries.swift; sourceTree = "<group>"; };
+		60001CBC265FC55C00C24DDA /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		60001CBE265FC8E700C24DDA /* CountriesViewController+UISearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountriesViewController+UISearchController.swift"; sourceTree = "<group>"; };
+		60001CC126600C3B00C24DDA /* CountriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCell.swift; sourceTree = "<group>"; };
+		6029F43A269DE24600FD0253 /* SelectedFlightsViewController+TableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedFlightsViewController+TableViewExt.swift"; sourceTree = "<group>"; };
+		604452F9262EFB3E00894463 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		6044530E262F0A3200894463 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		604453132632D2C400894463 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		605F6CF9266E5023009E68CF /* EmptyReturnFlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyReturnFlightCell.swift; sourceTree = "<group>"; };
+		605F6CFB266F8ED2009E68CF /* SelectedFlightsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFlightsModel.swift; sourceTree = "<group>"; };
+		607B17822685D7750065F674 /* PassengersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersViewModel.swift; sourceTree = "<group>"; };
+		60AB391626208A1900CA5D56 /* SelectDepartureFlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDepartureFlightViewController.swift; sourceTree = "<group>"; };
+		60AB391E2620B6B700CA5D56 /* SelectDepartureTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDepartureTopView.swift; sourceTree = "<group>"; };
+		60AB39212620BBE100CA5D56 /* SearchDepartureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDepartureModel.swift; sourceTree = "<group>"; };
+		60AB39352624708900CA5D56 /* SelectDepartureDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDepartureDateView.swift; sourceTree = "<group>"; };
+		60AB394226259CA800CA5D56 /* SelectDepartureFlight+TableViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectDepartureFlight+TableViewProtocols.swift"; sourceTree = "<group>"; };
+		60AB39472625A04F00CA5D56 /* SearchFlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightCell.swift; sourceTree = "<group>"; };
+		60AB394B2625D0C700CA5D56 /* SelectDepartureHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDepartureHeaderView.swift; sourceTree = "<group>"; };
+		60AB394F2625D64F00CA5D56 /* ContinueButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButtonView.swift; sourceTree = "<group>"; };
+		60AB39A5262D9D4500CA5D56 /* UIView+ShadowBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowBorder.swift"; sourceTree = "<group>"; };
+		60CB411E268F15BD00C26A9A /* AvailableFlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableFlights.swift; sourceTree = "<group>"; };
+		60D36369264417F000864F0C /* GetFlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFlights.swift; sourceTree = "<group>"; };
+		60D3636B264440F900864F0C /* SelectDepartureFligtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDepartureFligtViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03F22B7F25B18DBE00198734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D513C9A26FB2CF500547168 /* Toast in Frameworks */,
+				2DFF3F6F26C514F1003CBB30 /* ObjectMapper in Frameworks */,
+				0BD34A932E468B930043E6F2 /* FirebaseAuth in Frameworks */,
+				0BD34A892E468B930043E6F2 /* FirebaseAnalytics in Frameworks */,
+				607B178626861ADC0065F674 /* IQKeyboardManagerSwift in Frameworks */,
+				2DFF3F7226C51995003CBB30 /* KeychainAccess in Frameworks */,
+				2DFF3F6726C49D60003CBB30 /* SwiftyJSON in Frameworks */,
+				0BD34A8B2E468B930043E6F2 /* FirebaseAnalyticsCore in Frameworks */,
+				0BD34A912E468B930043E6F2 /* FirebaseAppDistribution-Beta in Frameworks */,
+				60CB4122268F354B00C26A9A /* FSCalendar in Frameworks */,
+				03A6A7FD25B73F340042421C /* PureLayout in Frameworks */,
+				03F22BBA25B1905A00198734 /* Alamofire in Frameworks */,
+				0BD34A8D2E468B930043E6F2 /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				2D27689126EF7D94007DB1DA /* JWTDecode in Frameworks */,
+				03E7FA0325D41FF100E37FAA /* SideMenu in Frameworks */,
+				0B0343DE2E49D5A100BC8C0F /* Lottie in Frameworks */,
+				0BD34A952E468B930043E6F2 /* FirebaseCrashlytics in Frameworks */,
+				0BD34A972E468B930043E6F2 /* FirebaseDatabase in Frameworks */,
+				0BD34A8F2E468B930043E6F2 /* FirebaseAppCheck in Frameworks */,
+				0BD34A992E468B930043E6F2 /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		031954D42614733A00DD0F1E /* Pasengers selection */ = {
+			isa = PBXGroup;
+			children = (
+				031954D52614736500DD0F1E /* SelectPassengersViewController.swift */,
+				031954DA261473A100DD0F1E /* SelectPassengersViewModel.swift */,
+				039BE6D62614B94F00209876 /* PassengerSelectionView.swift */,
+				039BE6D92614BAD500209876 /* PassengerSelectionType.swift */,
+			);
+			path = "Pasengers selection";
+			sourceTree = "<group>";
+		};
+		032AEFC725DBD07D00034A9A /* Find Bokings */ = {
+			isa = PBXGroup;
+			children = (
+				2D018958270B056000C1F70D /* FinderBookingStoryboard.storyboard */,
+				2DF821DC2722DC52009C2932 /* Boarding.storyboard */,
+				2DF821252720089E009C2932 /* View */,
+				2D01897D271CC9D200C1F70D /* InputsFindBooking */,
+				2D018957270B044D00C1F70D /* Controller */,
+				2D018954270AF42200C1F70D /* Model */,
+			);
+			path = "Find Bokings";
+			sourceTree = "<group>";
+		};
+		032EB4EA25E459E100C9254F /* Date Selection */ = {
+			isa = PBXGroup;
+			children = (
+				032EB4E225E459DB00C9254F /* DateSelectionViewController.swift */,
+				03DFAE892604F22C005DBDA1 /* MonthTableViewCell.swift */,
+				03D624FA25E50A0600084DC1 /* DateSelectionViewModel.swift */,
+				03D6250725E515D300084DC1 /* DateSelectionHeader.swift */,
+				03F6D56925E92B3F00250CEC /* MonthCollectionView.swift */,
+				03F6D57325E9377900250CEC /* DayCollectionViewCell.swift */,
+				0373102725EE9B74006E8D3B /* Day.swift */,
+				0373102D25EE9E0B006E8D3B /* MonthMetadata.swift */,
+			);
+			path = "Date Selection";
+			sourceTree = "<group>";
+		};
+		033A3C9C25BF0B8B00269C9F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BE726CD23E300667D45 /* Response */,
+				2DC40BB826C5745000667D45 /* ViewModel */,
+				2DFF3F5F26C404FC003CBB30 /* Controller */,
+				60001CB7265FB0EE00C24DDA /* Countries */,
+				03E6B0FB25C1CF8D0067AB84 /* Views */,
+				2DFF3F5D26C3FB1C003CBB30 /* SignUp.storyboard */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		0342970B25D16ACE001504DD /* Search Flights */ = {
+			isa = PBXGroup;
+			children = (
+				03CFB66626175B1200325A52 /* Base components */,
+				03F22B8925B18DBE00198734 /* SearchFlightsViewController.swift */,
+				03E6B11225C21CF40067AB84 /* SearchFlightsDataEntry.swift */,
+				03E6B0F625C1C88A0067AB84 /* SearchFlightsInputView.swift */,
+				03CFB65F261616DC00325A52 /* SearchFlightModel.swift */,
+				03BEE70C25C95856003262B8 /* Airports Selection */,
+				032EB4EA25E459E100C9254F /* Date Selection */,
+				031954D42614733A00DD0F1E /* Pasengers selection */,
+				60AB3912262089CA00CA5D56 /* Select Departure Flight */,
+				60001CAD265E475800C24DDA /* Selected Flights */,
+				039C4C6E2629C02300B63C57 /* Passengers */,
+				039C4C9E262DDCE200B63C57 /* Passenger Information */,
+				2D11135828533DB300C40684 /* ChoosePaymentMethod */,
+			);
+			path = "Search Flights";
+			sourceTree = "<group>";
+		};
+		034DA41725D6CFC9000254A3 /* Side menu */ = {
+			isa = PBXGroup;
+			children = (
+				03F37FCD25D5306E00C21D8F /* SideMenuViewController.swift */,
+				034DA40525D688C7000254A3 /* SideMenuTableViewCell.swift */,
+			);
+			path = "Side menu";
+			sourceTree = "<group>";
+		};
+		039C4C6E2629C02300B63C57 /* Passengers */ = {
+			isa = PBXGroup;
+			children = (
+				039C4C6F2629C02300B63C57 /* Cells */,
+				039C4C712629C02300B63C57 /* PassengersViewController+TableView.swift */,
+				039C4C722629C02300B63C57 /* PassengersViewController.swift */,
+				607B17822685D7750065F674 /* PassengersViewModel.swift */,
+			);
+			path = Passengers;
+			sourceTree = "<group>";
+		};
+		039C4C6F2629C02300B63C57 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				039C4C702629C02300B63C57 /* PassengersCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		039C4C9E262DDCE200B63C57 /* Passenger Information */ = {
+			isa = PBXGroup;
+			children = (
+				039C4C9F262DDCE200B63C57 /* PassengerInformationViewController.swift */,
+				039C4CA0262DDCE200B63C57 /* Views */,
+			);
+			name = "Passenger Information";
+			path = "PrishtinaJet/Modules/Home/Search Flights/Passenger Information";
+			sourceTree = SOURCE_ROOT;
+		};
+		039C4CA0262DDCE200B63C57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				039C4CA1262DDCE200B63C57 /* DateSelectionView.swift */,
+				039C4CA2262DDCE200B63C57 /* PassengersInputView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03BEE70C25C95856003262B8 /* Airports Selection */ = {
+			isa = PBXGroup;
+			children = (
+				03BEE70D25C95888003262B8 /* SelectAirportViewController.swift */,
+				03BEE71525C9589B003262B8 /* SelectAirportViewModel.swift */,
+				03BEE71A25C97B15003262B8 /* AirportTableViewCell.swift */,
+				03BEE71F25C97BB1003262B8 /* Airport.swift */,
+				034B33E025DBFC55002775BE /* TitleHeaderView.swift */,
+			);
+			path = "Airports Selection";
+			sourceTree = "<group>";
+		};
+		03C2C03125F8CBBC00295542 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2D359F7E281AC87400B406FF /* Booking */,
+				2D359F7D281AC84400B406FF /* UserProfile */,
+				2D359F7C281AC82B00B406FF /* Auth */,
+				2D27688C26EF39DB007DB1DA /* TokenRefresh */,
+				2DFF3F6826C49F77003CBB30 /* URL-Api.swift */,
+				03C2C03225F8CBD700295542 /* BaseRequest.swift */,
+				0359F01125FBAD07009BB15A /* GetAirports.swift */,
+				60D36369264417F000864F0C /* GetFlights.swift */,
+				60001CBA265FBF1900C24DDA /* GetCountries.swift */,
+				60CB411E268F15BD00C26A9A /* AvailableFlights.swift */,
+				2D27689326F09993007DB1DA /* ConfirmPay.swift */,
+				2D01894E2704601400C1F70D /* TotalPriceWithNumberPassenger.swift */,
+				2D0189502704615F00C1F70D /* TotalPriceWithNumberPassengerModel.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		03CFB66626175B1200325A52 /* Base components */ = {
+			isa = PBXGroup;
+			children = (
+				03D624FF25E50D4B00084DC1 /* ModalViewController.swift */,
+				03CFB66326175AFA00325A52 /* ModalBottomView.swift */,
+			);
+			path = "Base components";
+			sourceTree = "<group>";
+		};
+		03E69DED25BDD9FF0078DB2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03F22B8E25B18DC000198734 /* Assets.xcassets */,
+				039BE6DC2614BD2600209876 /* Colors.xcassets */,
+				03F22B9025B18DC000198734 /* LaunchScreen.storyboard */,
+				03F22B9325B18DC000198734 /* Info.plist */,
+				035BD47B25CBF27500B8A374 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03E69DEE25BDDA170078DB2D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				033A3C9225BEFFCD00269C9F /* BlueButton.swift */,
+				033A3C9725BF003000269C9F /* UnderlinedButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		03E69DF225BDDA2D0078DB2D /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				03473E1425BC64BD00D819CB /* AppColors.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		03E69DF625BDDA3E0078DB2D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				039C4CA8262ED88F00B63C57 /* DateHelper.swift */,
+				03355B5925D299F7005547B1 /* UIViewController+BackgroundImage.swift */,
+				03A6A80E25B8908E0042421C /* UINavigationController+StatusBar.swift */,
+				033A3CAB25BF0FFA00269C9F /* Cells+Identifier.swift */,
+				033A3CAA25BF0FFA00269C9F /* ItemsView+RegisterCell.swift */,
+				037748EE25C2B76100966B28 /* UIView+Border.swift */,
+				037748F325C2BCE800966B28 /* UIView+PureLayout.swift */,
+				03F6D56E25E92CE900250CEC /* Date+Extensions.swift */,
+				039BE6F22615C45200209876 /* Encodable+Dictionary.swift */,
+				60AB39A5262D9D4500CA5D56 /* UIView+ShadowBorder.swift */,
+				033DF748267D32A500EB3AB2 /* UIViewController+Alerts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03E69DFA25BDDA4E0078DB2D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				03F22B8525B18DBE00198734 /* AppDelegate.swift */,
+				03F22B8725B18DBE00198734 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		03E6B0F225C1C86D0067AB84 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				03E6B0FC25C1CFB90067AB84 /* Views */,
+				0342970F25D16AF8001504DD /* HomeViewController.swift */,
+				0342970B25D16ACE001504DD /* Search Flights */,
+				032AEFC725DBD07D00034A9A /* Find Bokings */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		03E6B0FB25C1CF8D0067AB84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03E6B0EA25C1B2E80067AB84 /* InputViewType.swift */,
+				03E6B0DF25C0B8AF0067AB84 /* ListInputButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03E6B0FC25C1CFB90067AB84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03E6B10525C219E90067AB84 /* HomeFormEntryView.swift */,
+				03E6B10A25C21B010067AB84 /* ButtonWithIcon.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03E6B0FE25C1CFE70067AB84 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2D27689226F07827007DB1DA /* Confirm-Pay */,
+				2DC40BE826CD267400667D45 /* MyBookings */,
+				2DC40BDC26CC00E000667D45 /* ChangePassword */,
+				2DC40BB926C5CCB500667D45 /* Profile */,
+				034DA41725D6CFC9000254A3 /* Side menu */,
+				6044530D262F0A1E00894463 /* Login */,
+				033A3C9C25BF0B8B00269C9F /* SignUp */,
+				03E6B0F225C1C86D0067AB84 /* Home */,
+				0342971A25D17017001504DD /* TabbableViewContrller.swift */,
+				03355B5425D29364005547B1 /* NavigationController.swift */,
+				034DA40D25D68A6E000254A3 /* SideMenuItem.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		03F22B7925B18DBE00198734 = {
+			isa = PBXGroup;
+			children = (
+				03F22B8425B18DBE00198734 /* PrishtinaJet */,
+				03F22B9B25B18DC000198734 /* PrishtinaJetTests */,
+				03F22BA625B18DC000198734 /* PrishtinaJetUITests */,
+				03F22B8325B18DBE00198734 /* Products */,
+				2D4EE2FC291A5C3700152F16 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03F22B8325B18DBE00198734 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03F22B8225B18DBE00198734 /* AirTiketa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03F22B8425B18DBE00198734 /* PrishtinaJet */ = {
+			isa = PBXGroup;
+			children = (
+				03E69DFA25BDDA4E0078DB2D /* App */,
+				03E6B0FE25C1CFE70067AB84 /* Modules */,
+				03C2C03125F8CBBC00295542 /* Networking */,
+				2D26C430285B305500D16C8C /* TermsAndPrivacy */,
+				03E69DEE25BDDA170078DB2D /* CustomViews */,
+				2D94B31028F58A6000A63356 /* Reachabilty */,
+				60AB39922629D87600CA5D56 /* Utilities */,
+				03E69DED25BDD9FF0078DB2D /* Resources */,
+			);
+			path = PrishtinaJet;
+			sourceTree = "<group>";
+		};
+		03F22B9B25B18DC000198734 /* PrishtinaJetTests */ = {
+			isa = PBXGroup;
+			children = (
+				03F22B9C25B18DC000198734 /* PrishtinaJetTests.swift */,
+				03F22B9E25B18DC000198734 /* Info.plist */,
+			);
+			path = PrishtinaJetTests;
+			sourceTree = "<group>";
+		};
+		03F22BA625B18DC000198734 /* PrishtinaJetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03F22BA725B18DC000198734 /* PrishtinaJetUITests.swift */,
+				03F22BA925B18DC000198734 /* Info.plist */,
+			);
+			path = PrishtinaJetUITests;
+			sourceTree = "<group>";
+		};
+		2D018954270AF42200C1F70D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D018955270AF44B00C1F70D /* FindMyReservationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D018957270B044D00C1F70D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D01895A270B0AD600C1F70D /* FindMyBookingController.swift */,
+				2DF821DE2722DC7A009C2932 /* BoardingVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D01897D271CC9D200C1F70D /* InputsFindBooking */ = {
+			isa = PBXGroup;
+			children = (
+				2D01897B271C9F6C00C1F70D /* FindBookingInputsViewController.swift */,
+				2D018979271C9F4600C1F70D /* FindBookingInputs.storyboard */,
+			);
+			path = InputsFindBooking;
+			sourceTree = "<group>";
+		};
+		2D11135828533DB300C40684 /* ChoosePaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				2D1113672856687500C40684 /* ChoosePaymentMethod.swift */,
+			);
+			path = ChoosePaymentMethod;
+			sourceTree = "<group>";
+		};
+		2D26C430285B305500D16C8C /* TermsAndPrivacy */ = {
+			isa = PBXGroup;
+			children = (
+				2D26C433285B374C00D16C8C /* TermsAndCondition.storyboard */,
+				2D26C435285B387300D16C8C /* TermsAndConditions.swift */,
+				2D5564C4285B578E00965C0D /* PrivacyPolicy.storyboard */,
+				2D5564C6285B583700965C0D /* PrivacyPolicy.swift */,
+			);
+			path = TermsAndPrivacy;
+			sourceTree = "<group>";
+		};
+		2D27688C26EF39DB007DB1DA /* TokenRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				2D27688626EA8390007DB1DA /* RefreshToken.swift */,
+				2D27688826EA92C0007DB1DA /* RefreshTokenViewModel.swift */,
+			);
+			path = TokenRefresh;
+			sourceTree = "<group>";
+		};
+		2D27689226F07827007DB1DA /* Confirm-Pay */ = {
+			isa = PBXGroup;
+			children = (
+				2D27689526F0CCAA007DB1DA /* PaymentResponse.swift */,
+				2D27689926F32AE1007DB1DA /* PaymentInWebView.swift */,
+				2D27689B26F36225007DB1DA /* SuccesPaymentStoryboard.storyboard */,
+				2D27689F26F3667D007DB1DA /* FailedPaymentViewController.storyboard */,
+				2D27689D26F3627D007DB1DA /* SuccesPaymentViewController.swift */,
+				2D2768A126F37C41007DB1DA /* FailedPaymentViewController.swift */,
+			);
+			path = "Confirm-Pay";
+			sourceTree = "<group>";
+		};
+		2D359F7C281AC82B00B406FF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				604453132632D2C400894463 /* SignUp.swift */,
+				604452F9262EFB3E00894463 /* Login.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2D359F7D281AC84400B406FF /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BD026C95B8600667D45 /* GetUserInfo.swift */,
+				2DC40BD226CA869500667D45 /* EditUserApiPut.swift */,
+				2D359F7F2823F1B400B406FF /* ChangePassword.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		2D359F7E281AC87400B406FF /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BF626CE4BE000667D45 /* GetMyBookings.swift */,
+				2DC40D0E26D3DED300667D45 /* DetailMyBookings.swift */,
+				2D0189622715841700C1F70D /* FindMyBooking.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		2D4EE2FC291A5C3700152F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D4EE2FF291A5D6300152F16 /* FormValidation */,
+				2D4EE2FD291A5C3700152F16 /* FormValidation.swift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D4EE2FF291A5D6300152F16 /* FormValidation */ = {
+			isa = PBXGroup;
+			children = (
+				2D4EE300291A5D6300152F16 /* FormValidation.xcodeproj */,
+				2D4EE303291A5D6300152F16 /* FormValidation */,
+			);
+			name = FormValidation;
+			path = ../../../PersonalLibrary/FormValidation;
+			sourceTree = "<group>";
+		};
+		2D4EE301291A5D6300152F16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D4EE308291A5D6300152F16 /* FormValidation.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D4EE303291A5D6300152F16 /* FormValidation */ = {
+			isa = PBXGroup;
+			children = (
+				2D4EE304291A5D6300152F16 /* FormValidation.h */,
+				2D4EE305291A5D6300152F16 /* FormValidation.swift */,
+			);
+			path = FormValidation;
+			sourceTree = "<group>";
+		};
+		2D94B31028F58A6000A63356 /* Reachabilty */ = {
+			isa = PBXGroup;
+			children = (
+				2D94B30328F4526D00A63356 /* no-internet-connection.json */,
+				2D94B2EF28F41C7300A63356 /* Reachability.swift */,
+				2D94B30528F4529500A63356 /* NotConnected.storyboard */,
+				2D94B30728F452A700A63356 /* NotConnectedVC.swift */,
+				2D94B31328F5A9C900A63356 /* ReusableCode+objcFunctionTapp.swift */,
+			);
+			path = Reachabilty;
+			sourceTree = "<group>";
+		};
+		2DC40BB826C5745000667D45 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				60001C9B26554D7200C24DDA /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2DC40BB926C5CCB500667D45 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BCB26C91CDD00667D45 /* Controller */,
+				2DC40BCA26C91CD500667D45 /* Model */,
+				2DC40BC026C695E500667D45 /* Profile.storyboard */,
+				2DC40BC226C6AC5E00667D45 /* EditPorfile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2DC40BCA26C91CD500667D45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BDA26CBD66100667D45 /* ADJUser.swift */,
+				2DC40BCE26C91DF700667D45 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DC40BCB26C91CDD00667D45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BC426C6ACF500667D45 /* EditProfileViewController.swift */,
+				2DC40BBA26C5CCDE00667D45 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DC40BDC26CC00E000667D45 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BDD26CC00EB00667D45 /* Controller */,
+				2DC40BDF26CC011B00667D45 /* ChangePassword.storyboard */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		2DC40BDD26CC00EB00667D45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BE126CC02BF00667D45 /* ChangePasswordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DC40BE726CD23E300667D45 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BBE26C66FA600667D45 /* RegisterResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		2DC40BE826CD267400667D45 /* MyBookings */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BEB26CD269000667D45 /* Model */,
+				2DC40BEA26CD268900667D45 /* View */,
+				2DC40BE926CD268100667D45 /* Controller */,
+				2DC40BEC26CD26C200667D45 /* MyBookings.storyboard */,
+				2DC40D0826D3B91E00667D45 /* DetailsBookings.storyboard */,
+				2D01897E271D641100C1F70D /* BoardingPassScreen.storyboard */,
+			);
+			path = MyBookings;
+			sourceTree = "<group>";
+		};
+		2DC40BE926CD268100667D45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BF026CD27A700667D45 /* BookingViewController.swift */,
+				2DC40D0A26D3B94000667D45 /* DetailsBookingsViewController.swift */,
+				2D018980271D644E00C1F70D /* BoradingPassViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DC40BEA26CD268900667D45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BF226CD33DF00667D45 /* BookingsCell.swift */,
+				2DC40D0226D0320100667D45 /* BookingsHeaderCell.swift */,
+				2DC40D0C26D3D5DC00667D45 /* DetailsBookingsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DC40BEB26CD269000667D45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DC40BF426CD47E400667D45 /* Reservations.swift */,
+				2D27688A26EE4B12007DB1DA /* ReservationDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DF821252720089E009C2932 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				039C4C812629C99800B63C57 /* NoBookingsView.swift */,
+				2D01895C270B0BBE00C1F70D /* FindMyBookingCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DFF3F5F26C404FC003CBB30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF3F6026C4052C003CBB30 /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DFF3F7526C520F6003CBB30 /* UI-Button */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF3F7626C520F6003CBB30 /* CheckBox.swift */,
+			);
+			path = "UI-Button";
+			sourceTree = "<group>";
+		};
+		60001CAD265E475800C24DDA /* Selected Flights */ = {
+			isa = PBXGroup;
+			children = (
+				60001CB2265E6BF900C24DDA /* Cells */,
+				60001CAE265E477700C24DDA /* SelectedFlightsViewController.swift */,
+				605F6CFB266F8ED2009E68CF /* SelectedFlightsModel.swift */,
+				6029F43A269DE24600FD0253 /* SelectedFlightsViewController+TableViewExt.swift */,
+			);
+			path = "Selected Flights";
+			sourceTree = "<group>";
+		};
+		60001CB2265E6BF900C24DDA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60001CB3265E6C8200C24DDA /* SelectedFlightsCell.swift */,
+				605F6CF9266E5023009E68CF /* EmptyReturnFlightCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		60001CB7265FB0EE00C24DDA /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				60001CC026600C2D00C24DDA /* Cells */,
+				60001CB8265FB11A00C24DDA /* CountriesViewController.swift */,
+				60001CBE265FC8E700C24DDA /* CountriesViewController+UISearchController.swift */,
+				60001CBC265FC55C00C24DDA /* CountriesViewModel.swift */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		60001CC026600C2D00C24DDA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60001CC126600C3B00C24DDA /* CountriesTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6044530D262F0A1E00894463 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2D27688D26EF5444007DB1DA /* NetworkManager copy.swift */,
+				03A146F825B9DE100031311A /* LoginViewController.swift */,
+				6044530E262F0A3200894463 /* LoginResponse.swift */,
+				60001CA72657A50E00C24DDA /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		60AB3912262089CA00CA5D56 /* Select Departure Flight */ = {
+			isa = PBXGroup;
+			children = (
+				60AB391D2620B67D00CA5D56 /* Views */,
+				60AB394626259EF400CA5D56 /* Cells */,
+				60AB391626208A1900CA5D56 /* SelectDepartureFlightViewController.swift */,
+				60AB394226259CA800CA5D56 /* SelectDepartureFlight+TableViewProtocols.swift */,
+				60AB39212620BBE100CA5D56 /* SearchDepartureModel.swift */,
+				60D3636B264440F900864F0C /* SelectDepartureFligtViewModel.swift */,
+			);
+			path = "Select Departure Flight";
+			sourceTree = "<group>";
+		};
+		60AB391D2620B67D00CA5D56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60AB391E2620B6B700CA5D56 /* SelectDepartureTopView.swift */,
+				60AB39352624708900CA5D56 /* SelectDepartureDateView.swift */,
+				60AB394B2625D0C700CA5D56 /* SelectDepartureHeaderView.swift */,
+				60AB394F2625D64F00CA5D56 /* ContinueButtonView.swift */,
+				60001CB5265E72F600C24DDA /* FlightInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60AB394626259EF400CA5D56 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60AB39472625A04F00CA5D56 /* SearchFlightCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		60AB39922629D87600CA5D56 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				03473E1C25BC736C00D819CB /* InputTextField.swift */,
+				2D11138F285750A000C40684 /* UserDefaults-Ext.swift */,
+				2DFF3F7526C520F6003CBB30 /* UI-Button */,
+				03E69DF225BDDA2D0078DB2D /* Color */,
+				03E69DF625BDDA3E0078DB2D /* Extensions */,
+				2DFF3F7326C519C5003CBB30 /* KeychainManager.swift */,
+				2D94B2A028EDA49B00A63356 /* DoneButton-Keyboard.swift */,
+				2D5568C2290827B70021E9C6 /* Validation.swift */,
+				2D7D2A47291840F4001C0A7D /* FormValidation.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03F22B8125B18DBE00198734 /* AirTiketa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F22BAC25B18DC000198734 /* Build configuration list for PBXNativeTarget "AirTiketa" */;
+			buildPhases = (
+				03F22B7E25B18DBE00198734 /* Sources */,
+				03F22B7F25B18DBE00198734 /* Frameworks */,
+				03F22B8025B18DBE00198734 /* Resources */,
+				035BD48E25CBF74F00B8A374 /* Firebase crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirTiketa;
+			packageProductDependencies = (
+				03F22BB925B1905A00198734 /* Alamofire */,
+				03A6A7FC25B73F340042421C /* PureLayout */,
+				03E7FA0225D41FF100E37FAA /* SideMenu */,
+				607B178526861ADC0065F674 /* IQKeyboardManagerSwift */,
+				60CB4121268F354B00C26A9A /* FSCalendar */,
+				2DFF3F6626C49D60003CBB30 /* SwiftyJSON */,
+				2DFF3F6E26C514F1003CBB30 /* ObjectMapper */,
+				2DFF3F7126C51995003CBB30 /* KeychainAccess */,
+				2D27689026EF7D94007DB1DA /* JWTDecode */,
+				2D513C9926FB2CF500547168 /* Toast */,
+				0BD34A882E468B930043E6F2 /* FirebaseAnalytics */,
+				0BD34A8A2E468B930043E6F2 /* FirebaseAnalyticsCore */,
+				0BD34A8C2E468B930043E6F2 /* FirebaseAnalyticsIdentitySupport */,
+				0BD34A8E2E468B930043E6F2 /* FirebaseAppCheck */,
+				0BD34A902E468B930043E6F2 /* FirebaseAppDistribution-Beta */,
+				0BD34A922E468B930043E6F2 /* FirebaseAuth */,
+				0BD34A942E468B930043E6F2 /* FirebaseCrashlytics */,
+				0BD34A962E468B930043E6F2 /* FirebaseDatabase */,
+				0BD34A982E468B930043E6F2 /* FirebaseRemoteConfig */,
+				0B0343DD2E49D5A100BC8C0F /* Lottie */,
+			);
+			productName = PrishtinaJet;
+			productReference = 03F22B8225B18DBE00198734 /* AirTiketa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03F22B7A25B18DBE00198734 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					03F22B8125B18DBE00198734 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 03F22B7D25B18DBE00198734 /* Build configuration list for PBXProject "AirTiketa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03F22B7925B18DBE00198734;
+			packageReferences = (
+				03F22BB825B1905A00198734 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				03A6A7FB25B73F340042421C /* XCRemoteSwiftPackageReference "PureLayout" */,
+				03E7FA0125D41FF100E37FAA /* XCRemoteSwiftPackageReference "SideMenu" */,
+				607B178426861ADC0065F674 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				60CB4120268F354B00C26A9A /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				2DFF3F6526C49D60003CBB30 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				2DFF3F6D26C514F1003CBB30 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				2DFF3F7026C51995003CBB30 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				2D27688F26EF7D93007DB1DA /* XCRemoteSwiftPackageReference "JWTDecode" */,
+				2D513C9826FB2CF500547168 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				2D94B2F528F4414300A63356 /* XCRemoteSwiftPackageReference "Reachability" */,
+				0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0B0343DC2E49D5A100BC8C0F /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			productRefGroup = 03F22B8325B18DBE00198734 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2D4EE301291A5D6300152F16 /* Products */;
+					ProjectRef = 2D4EE300291A5D6300152F16 /* FormValidation.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				03F22B8125B18DBE00198734 /* AirTiketa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2D4EE308291A5D6300152F16 /* FormValidation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FormValidation.framework;
+			remoteRef = 2D4EE307291A5D6300152F16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F22B8025B18DBE00198734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC40BC126C695E500667D45 /* Profile.storyboard in Resources */,
+				2D01897F271D641100C1F70D /* BoardingPassScreen.storyboard in Resources */,
+				2D27689C26F36225007DB1DA /* SuccesPaymentStoryboard.storyboard in Resources */,
+				2D94B30628F4529500A63356 /* NotConnected.storyboard in Resources */,
+				2DC40BE026CC011B00667D45 /* ChangePassword.storyboard in Resources */,
+				2D01897A271C9F4600C1F70D /* FindBookingInputs.storyboard in Resources */,
+				03F22B9225B18DC000198734 /* LaunchScreen.storyboard in Resources */,
+				2D5564C5285B578E00965C0D /* PrivacyPolicy.storyboard in Resources */,
+				2DF821DD2722DC52009C2932 /* Boarding.storyboard in Resources */,
+				039BE6DD2614BD2600209876 /* Colors.xcassets in Resources */,
+				03F22B8F25B18DC000198734 /* Assets.xcassets in Resources */,
+				035BD47C25CBF27500B8A374 /* GoogleService-Info.plist in Resources */,
+				2D94B30428F4526D00A63356 /* no-internet-connection.json in Resources */,
+				2DC40BC326C6AC5E00667D45 /* EditPorfile.storyboard in Resources */,
+				2D018959270B056000C1F70D /* FinderBookingStoryboard.storyboard in Resources */,
+				2DC40BED26CD26C200667D45 /* MyBookings.storyboard in Resources */,
+				2D26C434285B374C00D16C8C /* TermsAndCondition.storyboard in Resources */,
+				2DFF3F5E26C3FB1C003CBB30 /* SignUp.storyboard in Resources */,
+				2DC40D0926D3B91E00667D45 /* DetailsBookings.storyboard in Resources */,
+				2D2768A026F3667D007DB1DA /* FailedPaymentViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		035BD48E25CBF74F00B8A374 /* Firebase crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Firebase crashlytics";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%Build/*}SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03F22B7E25B18DBE00198734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037748F425C2BCE800966B28 /* UIView+PureLayout.swift in Sources */,
+				039C4CA5262DDCE200B63C57 /* PassengersInputView.swift in Sources */,
+				03CFB660261616DC00325A52 /* SearchFlightModel.swift in Sources */,
+				6029F43B269DE24600FD0253 /* SelectedFlightsViewController+TableViewExt.swift in Sources */,
+				03D6250825E515D300084DC1 /* DateSelectionHeader.swift in Sources */,
+				03C2C03325F8CBD700295542 /* BaseRequest.swift in Sources */,
+				03473E1D25BC736C00D819CB /* InputTextField.swift in Sources */,
+				2D94B2F028F41C7300A63356 /* Reachability.swift in Sources */,
+				034DA40E25D68A6E000254A3 /* SideMenuItem.swift in Sources */,
+				60AB394326259CA800CA5D56 /* SelectDepartureFlight+TableViewProtocols.swift in Sources */,
+				2D5564C7285B583700965C0D /* PrivacyPolicy.swift in Sources */,
+				031954DB261473A100DD0F1E /* SelectPassengersViewModel.swift in Sources */,
+				03F22B8A25B18DBE00198734 /* SearchFlightsViewController.swift in Sources */,
+				60AB39482625A04F00CA5D56 /* SearchFlightCell.swift in Sources */,
+				039C4C742629C02300B63C57 /* PassengersViewController+TableView.swift in Sources */,
+				2DC40BD326CA869500667D45 /* EditUserApiPut.swift in Sources */,
+				2DFF3F7726C520F6003CBB30 /* CheckBox.swift in Sources */,
+				60001CB6265E72F600C24DDA /* FlightInfoView.swift in Sources */,
+				2D018981271D644F00C1F70D /* BoradingPassViewController.swift in Sources */,
+				039BE6F32615C45200209876 /* Encodable+Dictionary.swift in Sources */,
+				2D111390285750A000C40684 /* UserDefaults-Ext.swift in Sources */,
+				60AB39A6262D9D4500CA5D56 /* UIView+ShadowBorder.swift in Sources */,
+				607B17832685D7750065F674 /* PassengersViewModel.swift in Sources */,
+				033A3CAD25BF0FFA00269C9F /* Cells+Identifier.swift in Sources */,
+				03F22B8625B18DBE00198734 /* AppDelegate.swift in Sources */,
+				605F6CFC266F8ED2009E68CF /* SelectedFlightsModel.swift in Sources */,
+				604452FA262EFB3E00894463 /* Login.swift in Sources */,
+				037748EF25C2B76100966B28 /* UIView+Border.swift in Sources */,
+				2D7D2A48291840F4001C0A7D /* FormValidation.swift in Sources */,
+				2D2768A226F37C41007DB1DA /* FailedPaymentViewController.swift in Sources */,
+				2D27688726EA8390007DB1DA /* RefreshToken.swift in Sources */,
+				2D01895D270B0BBE00C1F70D /* FindMyBookingCell.swift in Sources */,
+				2DFF3F6926C49F77003CBB30 /* URL-Api.swift in Sources */,
+				60001CB4265E6C8200C24DDA /* SelectedFlightsCell.swift in Sources */,
+				60001CBF265FC8E700C24DDA /* CountriesViewController+UISearchController.swift in Sources */,
+				03F22B8825B18DBE00198734 /* SceneDelegate.swift in Sources */,
+				0342971B25D17017001504DD /* TabbableViewContrller.swift in Sources */,
+				60D3636A264417F000864F0C /* GetFlights.swift in Sources */,
+				0373102E25EE9E0B006E8D3B /* MonthMetadata.swift in Sources */,
+				2DC40BF726CE4BE000667D45 /* GetMyBookings.swift in Sources */,
+				60001CB9265FB11A00C24DDA /* CountriesViewController.swift in Sources */,
+				03E6B11325C21CF40067AB84 /* SearchFlightsDataEntry.swift in Sources */,
+				03F37FCE25D5306E00C21D8F /* SideMenuViewController.swift in Sources */,
+				2DC40BF326CD33DF00667D45 /* BookingsCell.swift in Sources */,
+				039C4C852629C99800B63C57 /* NoBookingsView.swift in Sources */,
+				2DC40D0B26D3B94000667D45 /* DetailsBookingsViewController.swift in Sources */,
+				03BEE70E25C95888003262B8 /* SelectAirportViewController.swift in Sources */,
+				0359F01225FBAD07009BB15A /* GetAirports.swift in Sources */,
+				60001CBB265FBF1900C24DDA /* GetCountries.swift in Sources */,
+				03E6B0EB25C1B2E80067AB84 /* InputViewType.swift in Sources */,
+				60AB391726208A1900CA5D56 /* SelectDepartureFlightViewController.swift in Sources */,
+				60AB39222620BBE100CA5D56 /* SearchDepartureModel.swift in Sources */,
+				03355B5A25D299F7005547B1 /* UIViewController+BackgroundImage.swift in Sources */,
+				03BEE71B25C97B15003262B8 /* AirportTableViewCell.swift in Sources */,
+				039C4C752629C02300B63C57 /* PassengersViewController.swift in Sources */,
+				039C4CA4262DDCE200B63C57 /* DateSelectionView.swift in Sources */,
+				2D94B30828F452A700A63356 /* NotConnectedVC.swift in Sources */,
+				039C4CA9262ED88F00B63C57 /* DateHelper.swift in Sources */,
+				033A3CAC25BF0FFA00269C9F /* ItemsView+RegisterCell.swift in Sources */,
+				03E6B10625C219E90067AB84 /* HomeFormEntryView.swift in Sources */,
+				2D94B2A128EDA49B00A63356 /* DoneButton-Keyboard.swift in Sources */,
+				2DC40BF526CD47E400667D45 /* Reservations.swift in Sources */,
+				2DC40D0F26D3DED300667D45 /* DetailMyBookings.swift in Sources */,
+				605F6CFA266E5023009E68CF /* EmptyReturnFlightCell.swift in Sources */,
+				0373102825EE9B74006E8D3B /* Day.swift in Sources */,
+				2D27688E26EF5444007DB1DA /* NetworkManager copy.swift in Sources */,
+				60AB394C2625D0C700CA5D56 /* SelectDepartureHeaderView.swift in Sources */,
+				60001C9C26554D7200C24DDA /* SignUpViewModel.swift in Sources */,
+				2D01897C271C9F6C00C1F70D /* FindBookingInputsViewController.swift in Sources */,
+				2D27688B26EE4B12007DB1DA /* ReservationDetails.swift in Sources */,
+				2D0189512704615F00C1F70D /* TotalPriceWithNumberPassengerModel.swift in Sources */,
+				60001CA82657A50E00C24DDA /* LoginViewModel.swift in Sources */,
+				2DC40BBF26C66FA600667D45 /* RegisterResponse.swift in Sources */,
+				2DC40D0D26D3D5DC00667D45 /* DetailsBookingsCell.swift in Sources */,
+				03E6B0F725C1C88A0067AB84 /* SearchFlightsInputView.swift in Sources */,
+				03CFB66426175AFA00325A52 /* ModalBottomView.swift in Sources */,
+				60D3636C264440F900864F0C /* SelectDepartureFligtViewModel.swift in Sources */,
+				2D26C436285B387300D16C8C /* TermsAndConditions.swift in Sources */,
+				03473E1525BC64BD00D819CB /* AppColors.swift in Sources */,
+				2D27688926EA92C0007DB1DA /* RefreshTokenViewModel.swift in Sources */,
+				039BE6D72614B94F00209876 /* PassengerSelectionView.swift in Sources */,
+				03F6D56A25E92B3F00250CEC /* MonthCollectionView.swift in Sources */,
+				03D6250025E50D4B00084DC1 /* ModalViewController.swift in Sources */,
+				2D5568C3290827B70021E9C6 /* Validation.swift in Sources */,
+				2D94B31428F5A9C900A63356 /* ReusableCode+objcFunctionTapp.swift in Sources */,
+				2DFF3F7426C519C5003CBB30 /* KeychainManager.swift in Sources */,
+				03BEE72025C97BB1003262B8 /* Airport.swift in Sources */,
+				0342971025D16AF8001504DD /* HomeViewController.swift in Sources */,
+				033A3C9325BEFFCD00269C9F /* BlueButton.swift in Sources */,
+				60CB411F268F15BD00C26A9A /* AvailableFlights.swift in Sources */,
+				034DA40625D688C7000254A3 /* SideMenuTableViewCell.swift in Sources */,
+				03D624FB25E50A0600084DC1 /* DateSelectionViewModel.swift in Sources */,
+				039C4CA3262DDCE200B63C57 /* PassengerInformationViewController.swift in Sources */,
+				03355B5525D29364005547B1 /* NavigationController.swift in Sources */,
+				2D27689A26F32AE1007DB1DA /* PaymentInWebView.swift in Sources */,
+				2DFF3F6126C4052C003CBB30 /* RegisterViewController.swift in Sources */,
+				2DC40D0326D0320100667D45 /* BookingsHeaderCell.swift in Sources */,
+				2DC40BC526C6ACF500667D45 /* EditProfileViewController.swift in Sources */,
+				039BE6DA2614BAD500209876 /* PassengerSelectionType.swift in Sources */,
+				6044530F262F0A3200894463 /* LoginResponse.swift in Sources */,
+				03BEE71625C9589B003262B8 /* SelectAirportViewModel.swift in Sources */,
+				60AB39502625D64F00CA5D56 /* ContinueButtonView.swift in Sources */,
+				034B33E125DBFC55002775BE /* TitleHeaderView.swift in Sources */,
+				03DFAE8A2604F22C005DBDA1 /* MonthTableViewCell.swift in Sources */,
+				03F6D56F25E92CE900250CEC /* Date+Extensions.swift in Sources */,
+				039C4C732629C02300B63C57 /* PassengersCell.swift in Sources */,
+				03E6B0E025C0B8AF0067AB84 /* ListInputButton.swift in Sources */,
+				2D27689626F0CCAA007DB1DA /* PaymentResponse.swift in Sources */,
+				033DF749267D32A500EB3AB2 /* UIViewController+Alerts.swift in Sources */,
+				2D27689426F09993007DB1DA /* ConfirmPay.swift in Sources */,
+				03E6B10B25C21B010067AB84 /* ButtonWithIcon.swift in Sources */,
+				60001CAF265E477700C24DDA /* SelectedFlightsViewController.swift in Sources */,
+				60AB391F2620B6B700CA5D56 /* SelectDepartureTopView.swift in Sources */,
+				03F6D57425E9377900250CEC /* DayCollectionViewCell.swift in Sources */,
+				2DC40BE226CC02BF00667D45 /* ChangePasswordViewController.swift in Sources */,
+				2DC40BCF26C91DF700667D45 /* User.swift in Sources */,
+				60001CBD265FC55C00C24DDA /* CountriesViewModel.swift in Sources */,
+				2D01894F2704601400C1F70D /* TotalPriceWithNumberPassenger.swift in Sources */,
+				2DC40BD126C95B8600667D45 /* GetUserInfo.swift in Sources */,
+				032EB4E325E459DB00C9254F /* DateSelectionViewController.swift in Sources */,
+				03A146F925B9DE100031311A /* LoginViewController.swift in Sources */,
+				2DC40BDB26CBD66100667D45 /* ADJUser.swift in Sources */,
+				2D1113682856687600C40684 /* ChoosePaymentMethod.swift in Sources */,
+				604453142632D2C400894463 /* SignUp.swift in Sources */,
+				60AB39362624708900CA5D56 /* SelectDepartureDateView.swift in Sources */,
+				60001CC226600C3B00C24DDA /* CountriesTableViewCell.swift in Sources */,
+				2D27689E26F3627D007DB1DA /* SuccesPaymentViewController.swift in Sources */,
+				2DF821DF2722DC7A009C2932 /* BoardingVC.swift in Sources */,
+				03A6A80F25B8908E0042421C /* UINavigationController+StatusBar.swift in Sources */,
+				2DC40BBB26C5CCDE00667D45 /* ProfileViewController.swift in Sources */,
+				031954D62614736500DD0F1E /* SelectPassengersViewController.swift in Sources */,
+				2D0189632715841700C1F70D /* FindMyBooking.swift in Sources */,
+				2DC40BF126CD27A700667D45 /* BookingViewController.swift in Sources */,
+				2D01895B270B0AD600C1F70D /* FindMyBookingController.swift in Sources */,
+				2D359F802823F1B400B406FF /* ChangePassword.swift in Sources */,
+				2D018956270AF44B00C1F70D /* FindMyReservationModel.swift in Sources */,
+				033A3C9825BF003000269C9F /* UnderlinedButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03F22B9025B18DC000198734 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03F22B9125B18DC000198734 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03F22BAA25B18DC000198734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03F22BAB25B18DC000198734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03F22BAD25B18DC000198734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 15;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9R2XUFSDUN;
+				INFOPLIST_FILE = PrishtinaJet/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkplus.prishtinajet.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		03F22BAE25B18DC000198734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 15;
+				DEVELOPMENT_TEAM = 9R2XUFSDUN;
+				INFOPLIST_FILE = PrishtinaJet/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkplus.prishtinajet.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03F22B7D25B18DBE00198734 /* Build configuration list for PBXProject "AirTiketa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F22BAA25B18DC000198734 /* Debug */,
+				03F22BAB25B18DC000198734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F22BAC25B18DC000198734 /* Build configuration list for PBXNativeTarget "AirTiketa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F22BAD25B18DC000198734 /* Debug */,
+				03F22BAE25B18DC000198734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03A6A7FB25B73F340042421C /* XCRemoteSwiftPackageReference "PureLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PureLayout/PureLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.7;
+			};
+		};
+		03E7FA0125D41FF100E37FAA /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		03F22BB825B1905A00198734 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		0B0343DC2E49D5A100BC8C0F /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
+		2D27688F26EF7D93007DB1DA /* XCRemoteSwiftPackageReference "JWTDecode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/JWTDecode.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.2;
+			};
+		};
+		2D513C9826FB2CF500547168 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		2D94B2F528F4414300A63356 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		2DFF3F6526C49D60003CBB30 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		2DFF3F6D26C514F1003CBB30 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		2DFF3F7026C51995003CBB30 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+		607B178426861ADC0065F674 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+		60CB4120268F354B00C26A9A /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03A6A7FC25B73F340042421C /* PureLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03A6A7FB25B73F340042421C /* XCRemoteSwiftPackageReference "PureLayout" */;
+			productName = PureLayout;
+		};
+		03E7FA0225D41FF100E37FAA /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03E7FA0125D41FF100E37FAA /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		03F22BB925B1905A00198734 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F22BB825B1905A00198734 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0B0343DD2E49D5A100BC8C0F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B0343DC2E49D5A100BC8C0F /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		0BD34A882E468B930043E6F2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0BD34A8A2E468B930043E6F2 /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		0BD34A8C2E468B930043E6F2 /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		0BD34A8E2E468B930043E6F2 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		0BD34A902E468B930043E6F2 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		0BD34A922E468B930043E6F2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0BD34A942E468B930043E6F2 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		0BD34A962E468B930043E6F2 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		0BD34A982E468B930043E6F2 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD34A872E468B930043E6F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		2D27689026EF7D94007DB1DA /* JWTDecode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D27688F26EF7D93007DB1DA /* XCRemoteSwiftPackageReference "JWTDecode" */;
+			productName = JWTDecode;
+		};
+		2D513C9926FB2CF500547168 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D513C9826FB2CF500547168 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		2DFF3F6626C49D60003CBB30 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DFF3F6526C49D60003CBB30 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		2DFF3F6E26C514F1003CBB30 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DFF3F6D26C514F1003CBB30 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		2DFF3F7126C51995003CBB30 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DFF3F7026C51995003CBB30 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		607B178526861ADC0065F674 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 607B178426861ADC0065F674 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		60CB4121268F354B00C26A9A /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60CB4120268F354B00C26A9A /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 03F22B7A25B18DBE00198734 /* Project object */;
+}

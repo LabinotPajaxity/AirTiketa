@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Bookings-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BookingViewController" id="Y6W-OH-hqX" customClass="BookingViewController" customModule="PrishtinaJet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPq-O4-QaL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ql6-nO-kqf">
+                                        <rect key="frame" x="147.5" y="351" width="119" height="106"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookings" translatesAutoresizingMaskIntoConstraints="NO" id="Cl8-uJ-Ad9">
+                                                <rect key="frame" x="0.0" y="0.0" width="119" height="24"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bookings yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPD-Lt-vgv">
+                                                <rect key="frame" x="0.0" y="34" width="119" height="22"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZP-zj-xK2">
+                                                <rect key="frame" x="0.0" y="66" width="119" height="40"/>
+                                                <color key="backgroundColor" name="brandColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ZJv-TG-ZAP"/>
+                                                </constraints>
+                                                <state key="normal" title="Book Now">
+                                                    <color key="titleColor" red="0.9529411793" green="0.97254908080000002" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="BookNowButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="St2-Y0-1E5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="km9-jr-jg3">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="748"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookingsCell" rowHeight="152" id="PqR-2d-Pm7" customClass="BookingsCell" customModule="PrishtinaJet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="414" height="152"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PqR-2d-Pm7" id="u93-VK-SXk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fr-JQ-emO">
+                                                            <rect key="frame" x="25" y="16" width="374" height="131"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qSY-5g-eXv">
+                                                                    <rect key="frame" x="8" y="8" width="128.5" height="15"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookings" translatesAutoresizingMaskIntoConstraints="NO" id="Vr7-Bd-N03">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="15"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="20" id="AoA-je-KlJ"/>
+                                                                                <constraint firstAttribute="height" constant="20" id="rcU-c0-lBV"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun 23 May, 10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAm-37-lnV">
+                                                                            <rect key="frame" x="30" y="0.0" width="98.5" height="15"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prishtina Airport - Munchen - Prishtina Airport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ce5-et-jx0">
+                                                                    <rect key="frame" x="8" y="36" width="358" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="21" id="8s4-IW-RdY"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0q-Mg-fum">
+                                                                    <rect key="frame" x="0.0" y="91" width="374" height="40"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbq-vQ-1RE">
+                                                                            <rect key="frame" x="8" y="9" width="115" height="16.5"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="115" id="lCo-OO-3Zl"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                                            <color key="textColor" red="0.02352941222" green="0.62745100259999997" blue="0.72156864399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FED415" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gp4-KV-AoQ">
+                                                                            <rect key="frame" x="306" y="8" width="60" height="16.5"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="60" id="Xsu-42-JIS"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                                                            <color key="textColor" red="0.02352941222" green="0.62745100259999997" blue="0.72156864399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="Gp4-KV-AoQ" firstAttribute="top" secondItem="d0q-Mg-fum" secondAttribute="top" constant="8" id="6rc-sA-DEx"/>
+                                                                        <constraint firstItem="pbq-vQ-1RE" firstAttribute="top" secondItem="d0q-Mg-fum" secondAttribute="top" constant="9" id="LC2-YQ-qwg"/>
+                                                                        <constraint firstItem="pbq-vQ-1RE" firstAttribute="leading" secondItem="d0q-Mg-fum" secondAttribute="leading" constant="8" id="PWz-hs-V19"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="UPM-4R-ZlR"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Gp4-KV-AoQ" secondAttribute="trailing" constant="8" id="Vcb-JG-XT5"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="qSY-5g-eXv" firstAttribute="leading" secondItem="2fr-JQ-emO" secondAttribute="leading" constant="8" id="DoF-Fq-IGq"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Ce5-et-jx0" secondAttribute="trailing" constant="8" id="Fzg-GK-hId"/>
+                                                                <constraint firstItem="Ce5-et-jx0" firstAttribute="top" secondItem="qSY-5g-eXv" secondAttribute="bottom" constant="13" id="HC1-Lf-KHj"/>
+                                                                <constraint firstItem="Ce5-et-jx0" firstAttribute="leading" secondItem="2fr-JQ-emO" secondAttribute="leading" constant="8" id="IuE-L3-abI"/>
+                                                                <constraint firstAttribute="trailing" secondItem="d0q-Mg-fum" secondAttribute="trailing" id="Je8-Dj-IbT"/>
+                                                                <constraint firstItem="qSY-5g-eXv" firstAttribute="top" secondItem="2fr-JQ-emO" secondAttribute="top" constant="8" id="lPF-OK-WYf"/>
+                                                                <constraint firstItem="d0q-Mg-fum" firstAttribute="leading" secondItem="2fr-JQ-emO" secondAttribute="leading" id="uxb-8C-OuB"/>
+                                                                <constraint firstAttribute="bottom" secondItem="d0q-Mg-fum" secondAttribute="bottom" id="wm7-zy-pZy"/>
+                                                                <constraint firstItem="d0q-Mg-fum" firstAttribute="top" secondItem="Ce5-et-jx0" secondAttribute="bottom" constant="34" id="y9M-Pz-HLs"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="2fr-JQ-emO" secondAttribute="bottom" constant="5" id="NDj-Ic-2xE"/>
+                                                        <constraint firstItem="2fr-JQ-emO" firstAttribute="top" secondItem="u93-VK-SXk" secondAttribute="topMargin" constant="5" id="P3k-hF-bq5"/>
+                                                        <constraint firstItem="2fr-JQ-emO" firstAttribute="trailing" secondItem="u93-VK-SXk" secondAttribute="trailingMargin" constant="5" id="S6n-fq-Woh"/>
+                                                        <constraint firstItem="2fr-JQ-emO" firstAttribute="leading" secondItem="u93-VK-SXk" secondAttribute="leadingMargin" constant="5" id="oPf-3I-HB0"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="ConfirmationCode" destination="Gp4-KV-AoQ" id="7l9-XC-O4K"/>
+                                                    <outlet property="DateBookings" destination="DAm-37-lnV" id="e46-8U-ML4"/>
+                                                    <outlet property="NameDirectionFlight" destination="Ce5-et-jx0" id="2Gx-Jj-wwY"/>
+                                                    <outlet property="contentViewv" destination="u93-VK-SXk" id="UDf-jd-l5A"/>
+                                                    <outlet property="secondView" destination="2fr-JQ-emO" id="XrW-KH-b9l"/>
+                                                    <outlet property="viewForCode" destination="d0q-Mg-fum" id="EW0-SW-mEG"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="Rjx-ef-BLK"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="i2H-5X-avi"/>
+                                        </connections>
+                                    </tableView>
+                                    <searchBar hidden="YES" contentMode="redraw" searchBarStyle="prominent" placeholder="Search with Confirmation Code" translatesAutoresizingMaskIntoConstraints="NO" id="1Dd-Z8-H4B">
+                                        <rect key="frame" x="8" y="5" width="398" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="86W-N0-QXd"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="km9-jr-jg3" secondAttribute="bottom" id="4Q7-VA-OvL"/>
+                                    <constraint firstAttribute="trailing" secondItem="km9-jr-jg3" secondAttribute="trailing" id="AvP-ap-e0T"/>
+                                    <constraint firstItem="km9-jr-jg3" firstAttribute="leading" secondItem="mPq-O4-QaL" secondAttribute="leading" id="JSK-9u-MIR"/>
+                                    <constraint firstItem="Ql6-nO-kqf" firstAttribute="centerX" secondItem="mPq-O4-QaL" secondAttribute="centerX" id="T4i-iz-cth"/>
+                                    <constraint firstItem="Ql6-nO-kqf" firstAttribute="centerY" secondItem="mPq-O4-QaL" secondAttribute="centerY" id="YDq-0K-lRe"/>
+                                    <constraint firstItem="1Dd-Z8-H4B" firstAttribute="leading" secondItem="mPq-O4-QaL" secondAttribute="leading" constant="8" id="b9Y-yG-H3A"/>
+                                    <constraint firstItem="1Dd-Z8-H4B" firstAttribute="top" secondItem="mPq-O4-QaL" secondAttribute="top" constant="5" id="btn-hy-MbL"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Dd-Z8-H4B" secondAttribute="trailing" constant="8" id="fmH-WJ-3rH"/>
+                                    <constraint firstItem="km9-jr-jg3" firstAttribute="top" secondItem="1Dd-Z8-H4B" secondAttribute="bottom" constant="10" id="hDN-AM-hvk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mPq-O4-QaL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="G24-X1-WMI"/>
+                            <constraint firstItem="mPq-O4-QaL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xdq-Iv-kho"/>
+                            <constraint firstAttribute="bottom" secondItem="mPq-O4-QaL" secondAttribute="bottom" id="xqi-fa-3nG"/>
+                            <constraint firstItem="mPq-O4-QaL" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="zQN-fy-5Rz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Bookings" id="ClD-bf-xbX">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="6kP-pM-BXG">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backButton:" destination="Y6W-OH-hqX" id="jZW-MX-gmJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Vsn-QB-RYX">
+                            <connections>
+                                <action selector="SearchBarButton:" destination="Y6W-OH-hqX" id="5an-il-hMo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BookingsTabelView" destination="km9-jr-jg3" id="PUb-GV-1h7"/>
+                        <outlet property="noBookingsStackView" destination="Ql6-nO-kqf" id="GJE-Pr-9Ke"/>
+                        <outlet property="serachTextFeild" destination="1Dd-Z8-H4B" id="lA5-cm-pEF"/>
+                        <outlet property="viewAlmostWhite" destination="mPq-O4-QaL" id="lCh-Sp-C0q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="95.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PwY-lE-wlJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ntI-9S-Qxr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cag-AD-L7A">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="9Au-q3-N2q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQN-2Q-LsJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookings" width="22" height="24"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <namedColor name="brandColor">
+            <color red="0.023529411764705882" green="0.62745098039215685" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

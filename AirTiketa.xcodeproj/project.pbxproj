@@ -74,6 +74,8 @@
 		03F6D56F25E92CE900250CEC /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6D56E25E92CE900250CEC /* Date+Extensions.swift */; };
 		03F6D57425E9377900250CEC /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6D57325E9377900250CEC /* DayCollectionViewCell.swift */; };
 		0B0343DE2E49D5A100BC8C0F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0343DD2E49D5A100BC8C0F /* Lottie */; };
+		0B0FFA692E82F2380028D9A1 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0FFA682E82F2360028D9A1 /* PrivacyPolicyViewController.swift */; };
+		0B0FFA6B2E82F3960028D9A1 /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0FFA6A2E82F3960028D9A1 /* TermsOfUseViewController.swift */; };
 		0BD34A892E468B930043E6F2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A882E468B930043E6F2 /* FirebaseAnalytics */; };
 		0BD34A8B2E468B930043E6F2 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A8A2E468B930043E6F2 /* FirebaseAnalyticsCore */; };
 		0BD34A8D2E468B930043E6F2 /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD34A8C2E468B930043E6F2 /* FirebaseAnalyticsIdentitySupport */; };
@@ -266,6 +268,8 @@
 		03F6D56925E92B3F00250CEC /* MonthCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCollectionView.swift; sourceTree = "<group>"; };
 		03F6D56E25E92CE900250CEC /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		03F6D57325E9377900250CEC /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		0B0FFA682E82F2360028D9A1 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		0B0FFA6A2E82F3960028D9A1 /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
 		2D01894E2704601400C1F70D /* TotalPriceWithNumberPassenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPriceWithNumberPassenger.swift; sourceTree = "<group>"; };
 		2D0189502704615F00C1F70D /* TotalPriceWithNumberPassengerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPriceWithNumberPassengerModel.swift; sourceTree = "<group>"; };
 		2D018955270AF44B00C1F70D /* FindMyReservationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyReservationModel.swift; sourceTree = "<group>"; };
@@ -481,10 +485,12 @@
 		039C4C6E2629C02300B63C57 /* Passengers */ = {
 			isa = PBXGroup;
 			children = (
+				0B0FFA682E82F2360028D9A1 /* PrivacyPolicyViewController.swift */,
 				039C4C6F2629C02300B63C57 /* Cells */,
 				039C4C712629C02300B63C57 /* PassengersViewController+TableView.swift */,
 				039C4C722629C02300B63C57 /* PassengersViewController.swift */,
 				607B17822685D7750065F674 /* PassengersViewModel.swift */,
+				0B0FFA6A2E82F3960028D9A1 /* TermsOfUseViewController.swift */,
 			);
 			path = Passengers;
 			sourceTree = "<group>";
@@ -1379,10 +1385,12 @@
 				03A6A80F25B8908E0042421C /* UINavigationController+StatusBar.swift in Sources */,
 				2DC40BBB26C5CCDE00667D45 /* ProfileViewController.swift in Sources */,
 				031954D62614736500DD0F1E /* SelectPassengersViewController.swift in Sources */,
+				0B0FFA6B2E82F3960028D9A1 /* TermsOfUseViewController.swift in Sources */,
 				2D0189632715841700C1F70D /* FindMyBooking.swift in Sources */,
 				2DC40BF126CD27A700667D45 /* BookingViewController.swift in Sources */,
 				2D01895B270B0AD600C1F70D /* FindMyBookingController.swift in Sources */,
 				2D359F802823F1B400B406FF /* ChangePassword.swift in Sources */,
+				0B0FFA692E82F2380028D9A1 /* PrivacyPolicyViewController.swift in Sources */,
 				2D018956270AF44B00C1F70D /* FindMyReservationModel.swift in Sources */,
 				033A3C9825BF003000269C9F /* UnderlinedButton.swift in Sources */,
 			);

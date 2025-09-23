@@ -13,7 +13,10 @@ class DetailMyBookingServices {
     
     static let instance = DetailMyBookingServices()
     
-    private let baseUrl = "https://api.dev.bemyticket.com/api/stripe/session-status"
+//    private let baseUrl = "https://api.dev.bemyticket.com/api/stripe/session-status"
+    private var baseUrl: String {
+            return "\(BASE_URL)/api/stripe/session-status"
+        }
     
     var headers: HTTPHeaders? {
         guard let accessToken = KeychainManager.shared.accessToken else {

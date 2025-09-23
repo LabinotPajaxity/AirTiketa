@@ -201,6 +201,16 @@ class PassengersViewController: UIViewController {
         emailTextField.text = KeychainManager.shared.accessEmail
         fullNameTextField.text = KeychainManager.shared.accessUsername
         totalPriceLabel.text = totalPriceDelegate
+        
+        // Privacy Policy tap
+           let privacyTap = UITapGestureRecognizer(target: self, action: #selector(didTapPrivacyPolicy))
+           privacyPolicy.isUserInteractionEnabled = true
+           privacyPolicy.addGestureRecognizer(privacyTap)
+           
+           // Terms of Use tap
+           let termsTap = UITapGestureRecognizer(target: self, action: #selector(didTapTermsOfUse))
+           termsOfUse.isUserInteractionEnabled = true
+           termsOfUse.addGestureRecognizer(termsTap)
     }
     
     private func makeLabel(title: String) -> UILabel {
@@ -231,6 +241,20 @@ class PassengersViewController: UIViewController {
     @objc private func didTapTermsStack() {
         checkBox.isChecked.toggle()
     }
+    
+    @objc private func didTapPrivacyPolicy() {
+        let vc = PrivacyPolicyViewController()
+        vc.modalPresentationStyle = .formSheet
+        present(vc, animated: true, completion: nil)
+    }
+    
+    @objc private func didTapTermsOfUse() {
+        let vc = TermsOfUseViewController()
+        vc.modalPresentationStyle = .formSheet // or .overFullScreen for popup look
+        present(vc, animated: true, completion: nil)
+    }
+
+
     
     // 🔹 Shake animation helper
     private func shakeView(_ view: UIView) {

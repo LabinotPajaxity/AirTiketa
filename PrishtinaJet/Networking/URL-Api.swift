@@ -18,12 +18,12 @@ let currentEnvironment: APIEnvironment = .live
 
 // MARK: - Base URL
 var BASE_URL: String {
-    switch currentEnvironment {
-    case .dev:
-        return "https://api.dev.bemyticket.com"
-    case .live:
-        return "https://api.airtiketa.eu"
-    }
+	switch currentEnvironment {
+	case .dev:
+		return "https://api.dev.bemyticket.com"
+	case .live:
+		return "https://web-api.airtiketa.eu"
+	}
 }
 
 // MARK: - API Endpoints
@@ -32,7 +32,6 @@ var URL_CHANGE_PASSWORD: String { return "\(BASE_URL)/api/v1/account/password" }
 var URL_DETAIL_RESERVATION: String { return "\(BASE_URL)/api/v1/reservations/" }
 var URL_TOTAL_PRICE: String { return "\(BASE_URL)/api/v1/reservations/previewPrice" }
 var URL_FIND_MY_BOOKING: String { return "\(BASE_URL)/api/v1/reservations/search" }
-let LOGIN_URL = "https://api.prjet.linkplus-it.com/oauth/token"
 
 // MARK: - User Defaults Keys
 let KEY_IS_LOGGED_IN   = "KEY_IS_LOGGED_IN"

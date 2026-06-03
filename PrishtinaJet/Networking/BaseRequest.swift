@@ -41,9 +41,12 @@ class BaseRequest: URLRequestConvertible {
     var method: HTTPMethod { return .get }
     var parameters: Encodable?
     
-    var headers: HTTPHeaders? {
-        return [] // Add auth headers if needed
-    }
+	var headers: HTTPHeaders? {
+		return [
+			"Accept": "application/json",
+			"User-Agent": "Airtiketa-iOS"
+		]
+	}
     
     func asURLRequest() throws -> URLRequest {
         guard let url = makeUrl() else {
@@ -62,13 +65,18 @@ class BaseRequest: URLRequestConvertible {
         return request
     }
     
-    private func makeUrl() -> URL? {
-        var urlString = baseUrlString
-        if usesCleanBaseUrl {
-            urlString += path + (queryParams ?? "")
-        } else {
-            urlString += api + version + path + (queryParams ?? "")
-        }
-        return URL(string: urlString)
-    }
+	private func makeUrl() -> URL? {
+
+		var components = URLComponents()
+
+		components.scheme = "https"
+		components.host = "web-api.airtiketa.eu"
+		components.path = "/api/v1\(path)"
+
+		if let queryParams {
+			components.percentEncodedQuery = queryParams.replacingOccurrences(of: "?", with: "")
+		}
+
+		return components.url
+	}
 }

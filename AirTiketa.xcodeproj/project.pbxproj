@@ -103,7 +103,6 @@
 		2D27688726EA8390007DB1DA /* RefreshToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27688626EA8390007DB1DA /* RefreshToken.swift */; };
 		2D27688926EA92C0007DB1DA /* RefreshTokenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27688826EA92C0007DB1DA /* RefreshTokenViewModel.swift */; };
 		2D27688B26EE4B12007DB1DA /* ReservationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27688A26EE4B12007DB1DA /* ReservationDetails.swift */; };
-		2D27688E26EF5444007DB1DA /* NetworkManager copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27688D26EF5444007DB1DA /* NetworkManager copy.swift */; };
 		2D27689126EF7D94007DB1DA /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = 2D27689026EF7D94007DB1DA /* JWTDecode */; };
 		2D27689426F09993007DB1DA /* ConfirmPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27689326F09993007DB1DA /* ConfirmPay.swift */; };
 		2D27689626F0CCAA007DB1DA /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27689526F0CCAA007DB1DA /* PaymentResponse.swift */; };
@@ -288,7 +287,6 @@
 		2D27688626EA8390007DB1DA /* RefreshToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshToken.swift; sourceTree = "<group>"; };
 		2D27688826EA92C0007DB1DA /* RefreshTokenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenViewModel.swift; sourceTree = "<group>"; };
 		2D27688A26EE4B12007DB1DA /* ReservationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetails.swift; sourceTree = "<group>"; };
-		2D27688D26EF5444007DB1DA /* NetworkManager copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManager copy.swift"; sourceTree = "<group>"; };
 		2D27689326F09993007DB1DA /* ConfirmPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPay.swift; sourceTree = "<group>"; };
 		2D27689526F0CCAA007DB1DA /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
 		2D27689926F32AE1007DB1DA /* PaymentInWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInWebView.swift; sourceTree = "<group>"; };
@@ -1033,7 +1031,6 @@
 		6044530D262F0A1E00894463 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2D27688D26EF5444007DB1DA /* NetworkManager copy.swift */,
 				03A146F825B9DE100031311A /* LoginViewController.swift */,
 				6044530E262F0A3200894463 /* LoginResponse.swift */,
 				60001CA72657A50E00C24DDA /* LoginViewModel.swift */,
@@ -1319,7 +1316,6 @@
 				2DC40D0F26D3DED300667D45 /* DetailMyBookings.swift in Sources */,
 				605F6CFA266E5023009E68CF /* EmptyReturnFlightCell.swift in Sources */,
 				0373102825EE9B74006E8D3B /* Day.swift in Sources */,
-				2D27688E26EF5444007DB1DA /* NetworkManager copy.swift in Sources */,
 				60AB394C2625D0C700CA5D56 /* SelectDepartureHeaderView.swift in Sources */,
 				60001C9C26554D7200C24DDA /* SignUpViewModel.swift in Sources */,
 				2D01897C271C9F6C00C1F70D /* FindBookingInputsViewController.swift in Sources */,
@@ -1533,7 +1529,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZAP8797T78;
 				INFOPLIST_FILE = PrishtinaJet/Resources/Info.plist;
@@ -1543,11 +1539,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AirTiketa.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1560,7 +1560,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = ZAP8797T78;
 				INFOPLIST_FILE = PrishtinaJet/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
@@ -1569,11 +1569,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AirTiketa.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
